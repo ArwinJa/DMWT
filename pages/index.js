@@ -1,10 +1,17 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import React from "react";
+import Comments from './comments';
+import {useRouter} from 'next/router';
+
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      
+      
       <Head>
         <title>Nachhaltigkeit in der Raumfahrt</title>
         <link rel="icon" href="/favicon.ico" />
@@ -90,6 +97,9 @@ export default function Home() {
 }
 
 function LandingPage() {
+  const router = useRouter();
+  const [goToComments, setToComments] = React.useState(false);
+
     useEffect(() => {
         // Scrollen zum Ende der Seite
         window.scrollTo({
@@ -97,6 +107,11 @@ function LandingPage() {
             behavior: 'smooth' // Für sanftes Scrollen
         });
     }, []);
+
+    
+    if (goToComments) {
+      router.push('/comments')
+    }
 
     return (
       <div style={
@@ -114,9 +129,16 @@ function LandingPage() {
           <button className={styles.button1} onClick={ScrollToBottom}>
               Erfahre mehr
           </button>
+          <button className={styles.button1} onClick={() => {
+            setToComments(true);
+          }}>
+              Comments
+          </button>
       </div>
   )
 }
+
+
 
 function ScrollToBottom() {
     window.scrollTo({
@@ -124,3 +146,4 @@ function ScrollToBottom() {
         behavior: 'smooth' // Für sanftes Scrollen
     });
 }
+
