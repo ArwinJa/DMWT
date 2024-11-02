@@ -1,6 +1,8 @@
 import useSWR from 'swr';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Index from "./index"
+
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 

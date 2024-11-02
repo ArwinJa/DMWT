@@ -1,50 +1,60 @@
 import Head from 'next/head';
+import App from './App';
 import styles from '../styles/Home.module.css';
-import {useEffect, useState} from "react";
-import React from "react";
-import Comments from './comments';
-import {useRouter} from 'next/router';
-
+import {useEffect} from "react";
+import {useNavigate} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      
-      
-      <Head>
-        <title>Nachhaltigkeit in der Raumfahrt</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    // const navigate = useNavigate();
 
-      <main>
+    return (
+        <div className={styles.container}>
+            <Head>
+                <title>Nachhaltigkeit in der Raumfahrt</title>
+                <link rel="icon" href="/favicon.ico"/>
 
-          <LandingPage />
+                // Google Fonts
+                <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+                </style>
+        </Head>
 
-      </main>
+        <main>
+            <button className={styles.button1} onClick={() => navigate('/comments')}>
+                Zu den Kommentaren
+            </button>
+            <Page6/>
+            <Page5/>
+            <Page4/>
+            <Page3/>
+            <Page2/>
+            <RocketScroller/>
+            <LandingPage/>
+        </main>
 
-      <footer>
+        <style jsx>{`
+            main {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
-      </footer>
+            footer {
+                width: 100%;
+                height: 100px;
+                border-top: 1px solid #eaeaea;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-      <style jsx>{`
-        main {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
+            footer img {
+                margin-left: 0.5rem;
         }
         footer a {
           display: flex;
@@ -70,7 +80,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
+            <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -92,14 +102,11 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  );
+        </div>
+    );
 }
 
 function LandingPage() {
-  const router = useRouter();
-  const [goToComments, setToComments] = React.useState(false);
-
     useEffect(() => {
         // Scrollen zum Ende der Seite
         window.scrollTo({
@@ -108,37 +115,28 @@ function LandingPage() {
         });
     }, []);
 
-    
-    if (goToComments) {
-      router.push('/comments')
-    }
-
     return (
-      <div style={
-          {
-          backgroundImage: `url(https://media.news.de/resources/images/59/4a/b89a8e151b9538278a8db90aa80a.jpg)`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          width: '100vw',
-          height: '100vh'
-      }}>
-          <h1 className={styles.title}>
-              Nachhaltigkeit in der Raumfahrt
-          </h1>
-          <button className={styles.button1} onClick={ScrollToBottom}>
-              Erfahre mehr
-          </button>
-          <button className={styles.button1} onClick={() => {
-            setToComments(true);
-          }}>
-              Comments
-          </button>
-      </div>
-  )
+        <div style={
+            {
+                backgroundImage: `url(https://media.news.de/resources/images/59/4a/b89a8e151b9538278a8db90aa80a.jpg)`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                width: '100vw',
+                height: '100vh'
+            }}>
+            <h1 className={styles.title}>
+                Nachhaltigkeit in der Raumfahrt
+            </h1>
+            <button className={styles.button1} onClick={ScrollToBottom}>
+                Erfahre mehr
+            </button>
+            <h2 className={styles.scrollMessage}>
+                ↑ Bitte nach oben scrollen :) ↑
+            </h2>
+        </div>
+    )
 }
-
-
 
 function ScrollToBottom() {
     window.scrollTo({
@@ -147,3 +145,96 @@ function ScrollToBottom() {
     });
 }
 
+function TextBox() {
+    return (
+        <div>
+            <div className={styles.textBox}>
+                <div className={styles.defaultText}>
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function Page2() {
+    return (
+        <div className = {styles.container}
+             style={{
+                 backgroundColor: "lightblue",
+             }}>
+            <TextBox />
+        </div>
+    )
+}
+
+function Page3() {
+    return (
+        <div className = {styles.container}
+             style={{
+                 backgroundColor: "darkblue",
+             }}>
+            <TextBox />
+        </div>
+    )
+}
+
+function Page4() {
+    return (
+        <div>
+            <div className={styles.strip3}></div>
+            <div className={styles.strip2}></div>
+            <div className={styles.strip1}></div>
+        </div>
+    )
+}
+
+function Page5() {
+    return (
+        <div className={styles.container}
+             style={{
+                 backgroundColor: "black",
+             }}>
+            <TextBox />
+        </div>
+    )
+}
+
+function Page6() {
+    return (
+        <div className={styles.container}
+             style={{
+                 backgroundColor: "black",
+             }}>
+            <TextBox/>
+
+        </div>
+    )
+}
+
+
+const rocket = {
+    imagePath: "https://www.pngitem.com/pimgs/m/108-1082349_space-rocket-png-download-image-real-space-rocket.png",
+    imageSize: 250
+}
+
+function RocketScroller() {
+    return (
+        <div className = {styles.rocketScroller}>
+            <img
+                src={rocket.imagePath}
+                style={{
+                    width: rocket.imageSize,
+                    height: rocket.imageSize,
+                }}
+            />
+        </div>
+    )
+}
