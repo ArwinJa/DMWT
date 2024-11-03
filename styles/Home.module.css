@@ -163,3 +163,17 @@
   width: 1920px;
   background-color: dimgrey;
 }
+
+.commentStyle {
+  font-family: "Roboto Mono", monospace;
+  border: 3px solid darkslategray;
+  background-color: white;
+  padding: 15px 50px 15px 50px;
+}
+
+.title2 {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 250%;
+  text-align: left;
+}

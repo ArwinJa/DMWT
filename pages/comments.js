@@ -28,13 +28,16 @@ export default function Comments() {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.containerVertical}
+             style={{
+                 backgroundColor: 'darkgrey'
+             }}>
             <Head>
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <ul>
+            <p className={styles.title2}>Kommentare</p>
+            <ul className={styles.commentStyle}>
                 {comments.map((comment, index) => (
                     <li key={index}>
                         {comment.name}
