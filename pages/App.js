@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './index'; // Die Hauptseite
-import Comments from './Comments'; // Die Seite zu den Kommentaren
+import Comments from './comments'; // Die Seite zu den Kommentaren
 
 function App() {
     return (

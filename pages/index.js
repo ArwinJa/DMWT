@@ -2,12 +2,13 @@ import Head from 'next/head';
 import App from './App';
 import styles from '../styles/Home.module.css';
 import {useEffect} from "react";
-import {useNavigate} from "react-router-dom";
+import { useRouter } from 'next/navigation';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 export default function Home() {
     // const navigate = useNavigate();
+    const router = useRouter();
 
     return (
         <div className={styles.container}>
@@ -23,7 +24,7 @@ export default function Home() {
         </Head>
 
         <main>
-            <button className={styles.button1} onClick={() => navigate('/comments')}>
+            <button className={styles.button1} onClick={() => router.replace('/comments')}>
                 Zu den Kommentaren
             </button>
             <Page6/>

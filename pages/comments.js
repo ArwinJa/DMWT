@@ -1,12 +1,14 @@
 import useSWR from 'swr';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Index from "./index"
+import { useRouter } from 'next/navigation';
 
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Comments() {
+    const router = useRouter();
+
     const {
         data: comments,
         isLoading,
@@ -39,6 +41,10 @@ export default function Comments() {
                     </li>
                 ))}
             </ul>
+
+            <button className={styles.button1} onClick={() => router.replace('/')}>
+                Zurück zur Homepage
+            </button>
 
             <footer>
                 <a
