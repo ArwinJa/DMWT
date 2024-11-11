@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .containerVertical {
@@ -167,9 +166,9 @@
 
 .background_complete {
   grid-row: 1 / -1;
-  height: 110%;
-  width: 110%;
-  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .main {
@@ -182,6 +181,7 @@
   height: fit-content;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: clip;
 }
 
 .rocket {
@@ -189,7 +189,7 @@
   height: 80%;
   width: 80%;
   position: fixed;
-  top: 48%; /* Zentriert vertikal */
+  top: 50%; /* Zentriert vertikal */
   left: -25.75%; /* Am linken Bildschirmrand */
   transform: translateY(-50%); /* Zentriert das Element */
   transition: transform 0.3s ease; /* Für sanfte Animationen */
@@ -206,7 +206,7 @@
 .rocketBase {
   width: 100%;
   left: -25%;
-  top: 98.53%;
+  top: 98.4%;
   overflow: hidden;
   position: absolute;
 }
@@ -214,7 +214,7 @@
 .bottomSmoke {
   width: 100%;
   left: -2%;
-  top: 96.78%;
+  top: 96.45%;
   overflow: hidden;
   position: absolute;
 }
