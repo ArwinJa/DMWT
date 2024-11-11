@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^15.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "^2.2.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.27.0"
+  }
+}
