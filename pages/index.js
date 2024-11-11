@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.css'
 import {useEffect} from "react";
 import { useRouter } from 'next/navigation';
 
@@ -26,20 +26,31 @@ export default function Home() {
                     @import
                     url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
                 </style>
-        </Head>
+                <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+                </style>
+                <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+                </style>
+            </Head>
 
-        <main className={styles.main}>
+            <main className={styles.main}>
 
-            <button className={styles.button1} onClick={() => router.replace('/comments')}>
+                <button className={styles.button1} onClick={() => router.replace('/comments')}>
                 Zu den Kommentaren
-            </button>
-            <BottomSmoke/>
-            <RocketBase/>
-            <RocketDockBack/>
-            <RocketV1/>
-            <RocketDockFront/>
-            <BackgroundImage/>
-        </main>
+                </button>
+
+                <HeaderButton/>
+                <HeaderTexts/>
+                <RocketBase/>
+                <RocketDockBack/>
+                <RocketV1/>
+                <RocketDockFront/>
+                <BottomSmoke/>
+                <BackgroundImage/>
+            </main>
 
             <style jsx>{`
             main {
@@ -144,6 +155,10 @@ function LandingPage() {
     )
 }
 
+function LandingPageRocketBase() {
+
+}
+
 function ScrollToBottom() {
     window.scrollTo({
         top: document.body.scrollHeight,
@@ -203,5 +218,28 @@ function RocketBase () {
 function BottomSmoke () {
     return (
         <img src="/bottom_smoke.svg" alt="bottom_smoke" className={styles.bottomSmoke}/>
+    )
+}
+
+function HeaderTexts() {
+    return (
+        <div className={styles.landingPageTextContainerWithBackground}>
+            <h1 className={styles.landingPageTitleText}>
+                MISSION NACHHALTIGKEIT:
+            </h1>
+            <h2 className={styles.landingPageSecondTitleText}>
+                Die Zukunft der Raumfahrt beginnt jetzt.
+            </h2>
+        </div>
+    )
+}
+
+function HeaderButton() {
+    return (
+        <div className={styles.landingPageButtonContainer}>
+            <button className={styles.landingPageButton}>
+                Starte die Rakete
+            </button>
+        </div>
     )
 }
