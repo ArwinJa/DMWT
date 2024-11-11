@@ -1,10 +1,10 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .containerVertical {
@@ -16,13 +16,7 @@
   align-items: center;
 }
 
-.title {
-  color: white;
-  margin-top: 20%;
-  margin-left: 15%;
-  font-family: "Roboto Mono", monospace;
-  font-size: 250%;
-}
+
 
 .description {
   line-height: 1.5;
@@ -123,13 +117,6 @@
   transition: ease background-color 250ms;
 }
 
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
 .rocketScroller {
   position: fixed;
   top: 50%; /* Zentriert vertikal */
@@ -176,4 +163,155 @@
   font-family: "Roboto Mono", monospace;
   font-size: 250%;
   text-align: left;
+}
+
+.background_complete {
+  grid-row: 1 / -1;
+  height: 110%;
+  width: 110%;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.rocket {
+  grid-row: 1 / -1;
+  height: 80%;
+  width: 80%;
+  position: fixed;
+  top: 48%; /* Zentriert vertikal */
+  left: -25.75%; /* Am linken Bildschirmrand */
+  transform: translateY(-50%); /* Zentriert das Element */
+  transition: transform 0.3s ease; /* Für sanfte Animationen */
+}
+
+.rocketDock {
+  width: 28%;
+  left: 0.5%; /* Am linken Bildschirmrand */
+  top: 89.15%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.rocketBase {
+  width: 100%;
+  left: -25%;
+  top: 98.53%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.bottomSmoke {
+  width: 100%;
+  left: -2%;
+  top: 96.78%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.landingPageTitleText {
+  position: relative;
+  color: black;
+  /*top: 93.5%;*/
+  /*right: 13%;*/
+  font-family: "Michroma", monospace;
+  font-size: 275%;
+  /* Text Outline */
+  text-shadow: 1.5px 1.5px 0px white, -1.5px -1.5px 0px white, 1.5px -1.5px 0px white, -1.5px 1.5px 0px white;
+  background-color: black;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  border-left: black 20px solid;
+  border-right: black 20px solid;
+}
+
+.landingPageSecondTitleText {
+  margin-top: -2%;
+  background-color: black;
+  position: relative;
+  color: white;
+  /*top: 94.5%;*/
+  /*right: 14%;*/
+  font-family: "Montserrat SemiBold", monospace;
+  font-size: 190%;
+  text-shadow: black 1px 2px 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.landingPageButtonContainer {
+  position: absolute;
+  top: 95%;
+  left: 10%;
+  height: fit-content;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.landingPageTextContainerWithBackground {
+  background-color: black;
+  position: absolute;
+  top: 93%;
+  right: 5%;
+  border-left: black 20px solid;
+  border-right: black 20px solid;
+  height: fit-content;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 4px 2px white;
+}
+
+.landingPageButton {
+  margin-top: 4%;
+  background: linear-gradient(90deg, rgba(103,184,185,1) 0%, rgba(0,136,146,1) 100%);   color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  text-shadow: black 1px 1px 3px;
+  font-size: 26px;
+  font-family: "Montserrat Black", monospace;
+  margin-left: 15%;
+  margin-right: 15%;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px black;
+  transition: ease background-color 250ms;
+  &:hover {
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
 }

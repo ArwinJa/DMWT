@@ -1,14 +1,19 @@
 import Head from 'next/head';
-import App from './App';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.css'
 import {useEffect} from "react";
 import { useRouter } from 'next/navigation';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 
 export default function Home() {
-    // const navigate = useNavigate();
-    const router = useRouter();
+    const router = useRouter(); // Router für Kommentare
+
+    // Ans Ende der Seite scrollen bei Laden
+    useEffect(() => {
+        // Scrollen zum Ende der Seite
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth' // Für sanftes Scrollen
+        });
+    }, []);
 
     return (
         <div className={styles.container}>
@@ -21,22 +26,33 @@ export default function Home() {
                     @import
                     url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
                 </style>
-        </Head>
+                <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+                </style>
+                <style>
+                    @import
+                    url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+                </style>
+            </Head>
 
-        <main>
-            <button className={styles.button1} onClick={() => router.replace('/comments')}>
+            <main className={styles.main}>
+
+                <button className={styles.button1} onClick={() => router.replace('/comments')}>
                 Zu den Kommentaren
-            </button>
-            <Page6/>
-            <Page5/>
-            <Page4/>
-            <Page3/>
-            <Page2/>
-            <RocketScroller/>
-            <LandingPage/>
-        </main>
+                </button>
 
-        <style jsx>{`
+                <HeaderButton/>
+                <HeaderTexts/>
+                <RocketBase/>
+                <RocketDockBack/>
+                <RocketV1/>
+                <RocketDockFront/>
+                <BottomSmoke/>
+                <BackgroundImage/>
+            </main>
+
+            <style jsx>{`
             main {
                 flex: 1;
                 display: flex;
@@ -139,6 +155,10 @@ function LandingPage() {
     )
 }
 
+function LandingPageRocketBase() {
+
+}
+
 function ScrollToBottom() {
     window.scrollTo({
         top: document.body.scrollHeight,
@@ -165,77 +185,61 @@ function TextBox() {
     )
 }
 
-function Page2() {
+function BackgroundImage() {
     return (
-        <div className = {styles.container}
-             style={{
-                 backgroundColor: "lightblue",
-             }}>
-            <TextBox />
+        <img src="/background_complete.svg" alt="background_complete" className={styles.background_complete}/>
+    )
+}
+
+function RocketV1() {
+    return (
+        <img src="/rakete_v1.svg" alt="rakete_v1" className={styles.rocket}/>
+    )
+}
+
+function RocketDockFront() {
+    return (
+        <img src="/rocket_dock_front.svg" alt="rocket_dock" className={styles.rocketDock}/>
+    )
+}
+
+function RocketDockBack () {
+    return (
+        <img src="/rocket_dock_back.svg" alt="rocket_dock" className={styles.rocketDock}/>
+    )
+}
+
+function RocketBase () {
+    return (
+        <img src="/rocket_base.svg" alt="rocket_base" className={styles.rocketBase}/>
+    )
+}
+
+function BottomSmoke () {
+    return (
+        <img src="/bottom_smoke.svg" alt="bottom_smoke" className={styles.bottomSmoke}/>
+    )
+}
+
+function HeaderTexts() {
+    return (
+        <div className={styles.landingPageTextContainerWithBackground}>
+            <h1 className={styles.landingPageTitleText}>
+                MISSION NACHHALTIGKEIT:
+            </h1>
+            <h2 className={styles.landingPageSecondTitleText}>
+                Die Zukunft der Raumfahrt beginnt jetzt.
+            </h2>
         </div>
     )
 }
 
-function Page3() {
+function HeaderButton() {
     return (
-        <div className = {styles.container}
-             style={{
-                 backgroundColor: "darkblue",
-             }}>
-            <TextBox />
-        </div>
-    )
-}
-
-function Page4() {
-    return (
-        <div>
-            <div className={styles.strip3}></div>
-            <div className={styles.strip2}></div>
-            <div className={styles.strip1}></div>
-        </div>
-    )
-}
-
-function Page5() {
-    return (
-        <div className={styles.container}
-             style={{
-                 backgroundColor: "black",
-             }}>
-            <TextBox />
-        </div>
-    )
-}
-
-function Page6() {
-    return (
-        <div className={styles.container}
-             style={{
-                 backgroundColor: "black",
-             }}>
-            <TextBox/>
-
-        </div>
-    )
-}
-
-
-const rocket = {
-    imagePath: "https://www.pngitem.com/pimgs/m/108-1082349_space-rocket-png-download-image-real-space-rocket.png",
-    imageSize: 250
-}
-
-function RocketScroller() {
-    return (
-        <div className = {styles.rocketScroller}>
-            <img
-                src={rocket.imagePath}
-                style={{
-                    width: rocket.imageSize,
-                    height: rocket.imageSize,
-                }}
-            />
+        <div className={styles.landingPageButtonContainer}>
+            <button className={styles.landingPageButton}>
+                Starte die Rakete
+            </button>
         </div>
     )
 }
