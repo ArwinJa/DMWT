@@ -96,12 +96,6 @@
   }
 }
 
-.defaultText {
-  font-family: "Roboto Mono", monospace;
-  color: white;
-  text-align: center;
-}
-
 .textBox {
   width: 60%;
   background-color: black;
@@ -114,40 +108,6 @@
   margin-left: 30%;
   box-shadow: 0px 2px 2px lightgray;
   transition: ease background-color 250ms;
-}
-
-.rocketScroller {
-  position: fixed;
-  top: 50%; /* Zentriert vertikal */
-  left: 0; /* Am linken Bildschirmrand */
-  transform: translateY(-50%); /* Zentriert das Element */
-  padding: 20px;
-  transition: transform 0.3s ease; /* Für sanfte Animationen */
-}
-
-.scrollMessage {
-  text-shadow: white 0px -2px 1px;
-  margin-top: 17%;
-  text-align: center;
-  color: darkslategray;
-}
-
-.strip1 {
-  height: 20px;
-  width: 100%;
-  background-color: orange;
-}
-
-.strip2 {
-  height: 10px;
-  width: 100%;
-  background-color: darkorange;
-}
-
-.strip3 {
-  height: 10px;
-  width: 1920px;
-  background-color: dimgrey;
 }
 
 .commentStyle {
@@ -164,13 +124,7 @@
   text-align: left;
 }
 
-.background_complete {
-  grid-row: 1 / -1;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
+/* HAUPTCONTAINER in index.js */
 .main {
   display: flex;
   align-items: center;
@@ -184,134 +138,12 @@
   overflow-y: clip;
 }
 
-.rocket {
-  grid-row: 1 / -1;
-  height: 80%;
-  width: 80%;
-  position: fixed;
-  top: 50%; /* Zentriert vertikal */
-  left: -25.75%; /* Am linken Bildschirmrand */
-  transform: translateY(-50%); /* Zentriert das Element */
-  transition: transform 0.3s ease; /* Für sanfte Animationen */
-}
-
-.rocketDock {
-  width: 28%;
-  left: 0.5%; /* Am linken Bildschirmrand */
-  top: 89.15%;
-  overflow: hidden;
+.landingPageFeaturesContainer {
   position: absolute;
-}
-
-.rocketBase {
-  width: 100%;
-  left: -25%;
-  top: 98.4%;
-  overflow: hidden;
-  position: absolute;
-}
-
-.bottomSmoke {
-  width: 100%;
-  left: -2%;
-  top: 96.45%;
-  overflow: hidden;
-  position: absolute;
-}
-
-.landingPageTitleText {
-  position: relative;
-  color: black;
-  /*top: 93.5%;*/
-  /*right: 13%;*/
-  font-family: "Michroma", monospace;
-  font-size: 275%;
-  /* Text Outline */
-  text-shadow: 1.5px 1.5px 0px white, -1.5px -1.5px 0px white, 1.5px -1.5px 0px white, -1.5px 1.5px 0px white;
-  background-color: black;
-  padding-top: 0%;
-  padding-bottom: 1%;
-  border-left: black 20px solid;
-  border-right: black 20px solid;
-}
-
-.landingPageSecondTitleText {
-  margin-top: -2%;
-  background-color: black;
-  position: relative;
-  color: white;
-  /*top: 94.5%;*/
-  /*right: 14%;*/
-  font-family: "Montserrat SemiBold", monospace;
-  font-size: 190%;
-  text-shadow: black 1px 2px 3px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.landingPageButtonContainer {
-  position: absolute;
-  top: 95%;
-  left: 10%;
-  height: fit-content;
+  top: 94%;
+  height: min-content;
   text-align: center;
   align-items: center;
   width: 100%;
 }
 
-.landingPageTextContainerWithBackground {
-  background-color: black;
-  position: absolute;
-  top: 93%;
-  right: 5%;
-  border-left: black 20px solid;
-  border-right: black 20px solid;
-  height: fit-content;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0px 4px 2px white;
-}
-
-.landingPageButton {
-  margin-top: 4%;
-  background: linear-gradient(90deg, rgba(103,184,185,1) 0%, rgba(0,136,146,1) 100%);   color: white;
-  padding: 15px 20px 15px 20px;
-  border-radius: 5px;
-  outline: 0;
-  border: 0;
-  text-transform: uppercase;
-  text-shadow: black 1px 1px 3px;
-  font-size: 26px;
-  font-family: "Montserrat Black", monospace;
-  margin-left: 15%;
-  margin-right: 15%;
-  cursor: pointer;
-  box-shadow: 0px 2px 2px black;
-  transition: ease background-color 250ms;
-  &:hover {
-  }
-  &:disabled {
-    cursor: default;
-    opacity: 0.7;
-  }
-}
-
-.montserrat-font {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.michroma-regular {
-  font-family: "Michroma", sans-serif;
-  font-weight: 1000;
-  font-style: normal;
-}

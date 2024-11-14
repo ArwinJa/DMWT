@@ -1,0 +1,8 @@
+.bottomSmoke {
+    width: 100%;
+    left: -2%;
+    top: 96.45%;
+    overflow: hidden;
+    position: absolute;
+    pointer-events: none;
+}

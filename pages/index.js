@@ -1,7 +1,17 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css'
 import {useEffect} from "react";
-import { useRouter } from 'next/navigation';
+import {useRouter} from 'next/navigation';
+
+// Komponenten
+import RocketDockBackComplete from '../components/rocketDock';
+import RocketDockFront from '../components/rocketDockFront';
+import Rocket from '../components/rocket';
+import BottomSmoke from '../components/bottomSmoke';
+import LandingPageText from '../components/landingPageText';
+import RocketStartButton from '../components/rocketStartButton';
+import '../components/fonts';
+import BackgroundImage from '../components/backgroundImage';
 
 export default function Home() {
     const router = useRouter(); // Router für Kommentare
@@ -11,7 +21,7 @@ export default function Home() {
         // Scrollen zum Ende der Seite
         window.scrollTo({
             top: document.body.scrollHeight,
-            behavior: 'smooth' // Für sanftes Scrollen
+            behavior: 'instant'
         });
     }, []);
 
@@ -36,17 +46,15 @@ export default function Home() {
                 </style>
             </Head>
 
-            <main className={styles.main}>
 
+            <main className={styles.main}>
                 <button className={styles.button1} onClick={() => router.replace('/comments')}>
                 Zu den Kommentaren
                 </button>
 
-                <HeaderButton/>
                 <HeaderTexts/>
-                <RocketBase/>
-                <RocketDockBack/>
-                <RocketV1/>
+                <RocketDockBackComplete/>
+                <Rocket/>
                 <RocketDockFront/>
                 <BottomSmoke/>
                 <BackgroundImage/>
@@ -123,49 +131,6 @@ export default function Home() {
     );
 }
 
-function LandingPage() {
-    useEffect(() => {
-        // Scrollen zum Ende der Seite
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'smooth' // Für sanftes Scrollen
-        });
-    }, []);
-
-    return (
-        <div style={
-            {
-                backgroundImage: `url(https://media.news.de/resources/images/59/4a/b89a8e151b9538278a8db90aa80a.jpg)`,
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                width: '100vw',
-                height: '100vh'
-            }}>
-            <h1 className={styles.title}>
-                Nachhaltigkeit in der Raumfahrt
-            </h1>
-            <button className={styles.button1} onClick={ScrollToBottom}>
-                Erfahre mehr
-            </button>
-            <h2 className={styles.scrollMessage}>
-                ↑ Bitte nach oben scrollen :) ↑
-            </h2>
-        </div>
-    )
-}
-
-function LandingPageRocketBase() {
-
-}
-
-function ScrollToBottom() {
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth' // Für sanftes Scrollen
-    });
-}
-
 function TextBox() {
     return (
         <div>
@@ -185,61 +150,12 @@ function TextBox() {
     )
 }
 
-function BackgroundImage() {
-    return (
-        <img src="/background_complete.svg" alt="background_complete" className={styles.background_complete}/>
-    )
-}
-
-function RocketV1() {
-    return (
-        <img src="/rakete_v1.svg" alt="rakete_v1" className={styles.rocket}/>
-    )
-}
-
-function RocketDockFront() {
-    return (
-        <img src="/rocket_dock_front.svg" alt="rocket_dock" className={styles.rocketDock}/>
-    )
-}
-
-function RocketDockBack () {
-    return (
-        <img src="/rocket_dock_back.svg" alt="rocket_dock" className={styles.rocketDock}/>
-    )
-}
-
-function RocketBase () {
-    return (
-        <img src="/rocket_base.svg" alt="rocket_base" className={styles.rocketBase}/>
-    )
-}
-
-function BottomSmoke () {
-    return (
-        <img src="/bottom_smoke.svg" alt="bottom_smoke" className={styles.bottomSmoke}/>
-    )
-}
-
+// "MISSION NACHHALTIGKEIT: Die Zukunft der Raumfahrt beginnt jetzt" + "Starte die Rakete"
 function HeaderTexts() {
     return (
-        <div className={styles.landingPageTextContainerWithBackground}>
-            <h1 className={styles.landingPageTitleText}>
-                MISSION NACHHALTIGKEIT:
-            </h1>
-            <h2 className={styles.landingPageSecondTitleText}>
-                Die Zukunft der Raumfahrt beginnt jetzt.
-            </h2>
-        </div>
-    )
-}
-
-function HeaderButton() {
-    return (
-        <div className={styles.landingPageButtonContainer}>
-            <button className={styles.landingPageButton}>
-                Starte die Rakete
-            </button>
+        <div className={styles.landingPageFeaturesContainer}>
+            <LandingPageText/>
+            <RocketStartButton/>
         </div>
     )
 }

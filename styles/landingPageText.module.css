@@ -1,0 +1,42 @@
+.landingPageTitleText {
+    position: relative;
+    color: black;
+    /*top: 93.5%;*/
+    /*right: 13%;*/
+    font-family: "Michroma", monospace;
+    font-size: 275%;
+    /* Text Outline */
+    text-shadow: 1.5px 1.5px 0px white, -1.5px -1.5px 0px white, 1.5px -1.5px 0px white, -1.5px 1.5px 0px white;
+    background-color: black;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    border-left: black 20px solid;
+    border-right: black 20px solid;
+}
+
+.landingPageSecondTitleText {
+    margin-top: -2%;
+    background-color: black;
+    position: relative;
+    color: white;
+    /*top: 94.5%;*/
+    /*right: 14%;*/
+    font-family: "Montserrat SemiBold", monospace;
+    font-size: 190%;
+    text-shadow: black 1px 2px 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.landingPageTextContainerWithBackground {
+    background-color: black;
+    position: absolute;
+    border-left: black 20px solid;
+    border-right: black 20px solid;
+    min-height: auto;
+    min-width: auto;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 4px 2px white;
+    left: 35%;
+}

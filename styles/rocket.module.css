@@ -1,0 +1,11 @@
+.rocket {
+    grid-row: 1 / -1;
+    height: 80%;
+    width: 80%;
+    position: fixed;
+    top: 50%; /* Zentriert vertikal */
+    left: -25.75%; /* Am linken Bildschirmrand */
+    transform: translateY(-50%); /* Zentriert das Element */
+    transition: transform 0.3s ease; /* Für sanfte Animationen */
+    pointer-events: none;
+}
