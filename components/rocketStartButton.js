@@ -4,7 +4,7 @@ function RocketStartButton() {
     return (
         <div className={styles.landingPageButtonContainer}>
             <button className={styles.landingPageButton}>
-                Starte die Rakete
+                Starte deine Reise!
             </button>
         </div>
     )
