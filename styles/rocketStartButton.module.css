@@ -1,15 +1,16 @@
 .landingPageButton {
-    margin-top: 4%;
+    margin-top: 0;
     background: linear-gradient(150deg, rgba(69,215,190,1) 0%, rgba(47,78,200,1) 100%);   color: white;
-    padding: 15px 20px 15px 20px;
-    border-radius: 5px;
+    /*padding: 15px 20px 15px 20px;*/
+    padding: 1rem 1.2rem 1rem 1.2rem ;
+    border-radius: 0.3125rem;
     outline: 0;
-    border: white solid 2px;
-    text-shadow: black 1px 1px 3px;
-    font-size: 24px;
+    border: white solid 0.125rem;
+    text-shadow: black 0.0625rem 0.0625rem 0.1875rem;
+    font-size: 1.3rem;
     font-family: "Michroma", "monospace";
     cursor: pointer;
-    box-shadow: 0px 2px 2px black;
+    box-shadow: 0px 0.125rem 0.125rem black;
     transition: ease background-color 250ms;
     &:hover {
     }
@@ -20,7 +21,7 @@
 }
 
 .landingPageButtonContainer {
-    margin-top: 150px /*7.5%*/;
+    margin-top: 4rem /*7.5%*/;
     position: relative;
     height: fit-content;
     text-align: center;

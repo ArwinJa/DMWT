@@ -12,6 +12,7 @@ import LandingPageText from '../components/landingPageText';
 import RocketStartButton from '../components/rocketStartButton';
 import '../components/fonts';
 import BackgroundImage from '../components/backgroundImage';
+import TextBoxMain from "../components/textBoxMain";
 
 export default function Home() {
     const router = useRouter(); // Router für Kommentare
@@ -52,6 +53,7 @@ export default function Home() {
                 Zu den Kommentaren
                 </button>
 
+                <TextBoxMain/>
                 <HeaderTexts/>
                 <RocketDockBackComplete/>
                 <Rocket/>
