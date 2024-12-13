@@ -1,0 +1,14 @@
+.scrollUpButton {
+    position: absolute;
+    top: 98.2%;
+    left: 94%;
+    width: 2.2%;
+    height: 2.2%;
+    transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
+    opacity: 0.5;
+}
+
+.scrollUpButton:hover {
+    opacity: 1; /* Leichter Effekt beim Hover */
+    scale: 105%;
+}

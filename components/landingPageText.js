@@ -7,7 +7,7 @@ function LandingPageText() {
                 MISSION NACHHALTIGKEIT:
             </h1>
             <h2 className={styles.landingPageSecondTitleText}>
-                Die Zukunft der Raumfahrt beginnt jetzt.
+                Nachhaltig denken, galaktisch handeln.
             </h2>
         </div>
     )

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import {useEffect} from "react";
 import {useRouter} from 'next/navigation';
 
@@ -9,12 +9,16 @@ import RocketDockFront from '../components/rocketDockFront';
 import Rocket from '../components/rocket';
 import BottomSmoke from '../components/bottomSmoke';
 import LandingPageText from '../components/landingPageText';
-import RocketStartButton from '../components/rocketStartButton';
+import RocketStartButton from '../components/rocketStartButton.jsx';
 import '../components/fonts';
 import BackgroundImage from '../components/backgroundImage';
 import TextBoxMain from "../components/textBoxMain";
+import ScrollUpButton from "../components/scrollUpButton.jsx";
+import ScrollDownButton from "../components/scrollDownButton.jsx";
+import TextBox1 from "../components/textBox1";
 
-export default function Home() {
+
+export default function Index() {
     const router = useRouter(); // Router für Kommentare
 
     // Ans Ende der Seite scrollen bei Laden
@@ -27,6 +31,8 @@ export default function Home() {
     }, []);
 
     return (
+
+
         <div className={styles.container}>
             <Head>
                 <title>Nachhaltigkeit in der Raumfahrt</title>
@@ -50,20 +56,23 @@ export default function Home() {
 
             <main className={styles.main}>
                 <button className={styles.button1} onClick={() => router.replace('/comments')}>
-                Zu den Kommentaren
+                    Zu den Kommentaren
                 </button>
 
-                <TextBoxMain/>
+                <TextBox1/>
                 <HeaderTexts/>
                 <RocketDockBackComplete/>
                 <Rocket/>
                 <RocketDockFront/>
                 <BottomSmoke/>
+                <ScrollUpButton />
+                <ScrollDownButton />
                 <BackgroundImage/>
+
             </main>
 
             <style jsx>{`
-            main {
+                main {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
@@ -130,26 +139,10 @@ export default function Home() {
         }
       `}</style>
         </div>
-    );
-}
 
-function TextBox() {
-    return (
-        <div>
-            <div className={styles.textBox}>
-                <div className={styles.defaultText}>
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </div>
-            </div>
-        </div>
-    )
+    );
+
+
 }
 
 // "MISSION NACHHALTIGKEIT: Die Zukunft der Raumfahrt beginnt jetzt" + "Starte die Rakete"
