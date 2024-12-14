@@ -4,12 +4,14 @@ function Navbar() {
     const handleScroll = (id) => {
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({behavior: 'smooth'});
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
         }
-      };
+    };
 
     return (
         <nav className={styles.nav}>
+            
+            <img src="/Logo_white.png" alt="logo" className={styles.img} />
             <div>
                 <button className={styles.link} onClick={() => handleScroll("raketenstarts")} >Raketenstarts</button>
                 <button className={styles.link} onClick={() => handleScroll("treibstoffe")} >Treibstoffe</button>
