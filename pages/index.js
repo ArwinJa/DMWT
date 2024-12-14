@@ -65,6 +65,7 @@ export default function Index() {
                 <button className={styles.button1} onClick={() => router.replace('/comments')}>
                     Zu den Kommentaren
                 </button>
+
                 <Navbar />
                 <TextBox5 />
                 <TextBox4 />
@@ -80,8 +81,9 @@ export default function Index() {
                 <ScrollUpButton />
                 <ScrollDownButton />
                 <BackgroundImage />
+                <Footer />
             </main>
-            <Footer />
+
 
             <style jsx>{`
                 main {
@@ -92,25 +94,7 @@ export default function Index() {
                 align-items: center;
             }
 
-            footer {
-                width: 100%;
-                height: 100px;
-                border-top: 1px solid #eaeaea;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            footer img {
-                margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
+            
         code {
           background: #fafafa;
           border-radius: 5px;

@@ -6,10 +6,9 @@
     background: #333;
     color: #fff;
     position: absolute;
-    bottom: 0;
     left: 0;
     z-index: 1001;
-    
+    top: 99.5%;
 }
 
 .footer img {
