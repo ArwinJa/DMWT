@@ -1,12 +1,12 @@
 import { InView } from 'react-intersection-observer';
 import styles from '../styles/textBoxClear.module.css';
 
-function TextBox1() {
+function TextBox2() {
     return (
-        <div id="raketenstarts"
+        <div id="treibstoffe"
         style={{
             position: 'absolute',
-            top: '85%',
+            top: '70%',
             left: '40.5%'
         }}>
             <InView
@@ -18,7 +18,7 @@ function TextBox1() {
                         className={`${styles.fadeIn} ${inView ? styles.visible : styles.hidden}`}
                     >
                         <div className={styles.textBoxMain}>
-                            <h2 className={styles.h2}>Raketenstarts</h2>
+                            <h2 className={styles.h2}>Treibstoffe</h2>
                             <p className={styles.p}>
                                 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
                                 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
@@ -48,4 +48,4 @@ function TextBox1() {
     );
 }
 
-export default TextBox1;
+export default TextBox2;

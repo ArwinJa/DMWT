@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {useEffect} from "react";
-import {useRouter} from 'next/navigation';
+import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
 
 // Komponenten
 import RocketDockBackComplete from '../components/rocketDock';
@@ -15,7 +15,13 @@ import BackgroundImage from '../components/backgroundImage';
 import TextBoxMain from "../components/textBoxMain";
 import ScrollUpButton from "../components/scrollUpButton.jsx";
 import ScrollDownButton from "../components/scrollDownButton.jsx";
+import Navbar from '../components/navbar.js';
 import TextBox1 from "../components/textBox1";
+import TextBox2 from "../components/textBox2";
+import TextBox3 from '../components/textBox3';
+import TextBox4 from '../components/textBox4';
+import TextBox5 from '../components/textBox5';
+
 
 
 export default function Index() {
@@ -36,7 +42,7 @@ export default function Index() {
         <div className={styles.container}>
             <Head>
                 <title>Nachhaltigkeit in der Raumfahrt</title>
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/favicon.ico" />
 
                 // Google Fonts
                 <style>
@@ -58,16 +64,21 @@ export default function Index() {
                 <button className={styles.button1} onClick={() => router.replace('/comments')}>
                     Zu den Kommentaren
                 </button>
+                <Navbar />
+                <TextBox5 />
+                <TextBox4 />
+                <TextBox3 />
+                <TextBox2 />
+                <TextBox1 />
 
-                <TextBox1/>
-                <HeaderTexts/>
-                <RocketDockBackComplete/>
-                <Rocket/>
-                <RocketDockFront/>
-                <BottomSmoke/>
+                <HeaderTexts />
+                <RocketDockBackComplete />
+                <Rocket />
+                <RocketDockFront />
+                <BottomSmoke />
                 <ScrollUpButton />
                 <ScrollDownButton />
-                <BackgroundImage/>
+                <BackgroundImage />
 
             </main>
 
@@ -149,8 +160,8 @@ export default function Index() {
 function HeaderTexts() {
     return (
         <div className={styles.landingPageFeaturesContainer}>
-            <LandingPageText/>
-            <RocketStartButton/>
+            <LandingPageText />
+            <RocketStartButton />
         </div>
     )
 }
