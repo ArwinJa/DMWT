@@ -21,6 +21,7 @@ import TextBox2 from "../components/textBox2";
 import TextBox3 from '../components/textBox3';
 import TextBox4 from '../components/textBox4';
 import TextBox5 from '../components/textBox5';
+import Footer from '../components/footer.js';
 
 
 
@@ -79,8 +80,8 @@ export default function Index() {
                 <ScrollUpButton />
                 <ScrollDownButton />
                 <BackgroundImage />
-
             </main>
+            <Footer />
 
             <style jsx>{`
                 main {
@@ -149,11 +150,11 @@ export default function Index() {
           box-sizing: border-box;
         }
       `}</style>
+            
         </div>
 
+
     );
-
-
 }
 
 // "MISSION NACHHALTIGKEIT: Die Zukunft der Raumfahrt beginnt jetzt" + "Starte die Rakete"
