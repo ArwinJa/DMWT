@@ -48,3 +48,22 @@
     top: 6rem;
 }
 
+.landingPageLogo {
+    position: relative;
+    width: 85%;
+    height: 85%;
+}
+
+.landingPageTextContainerAlt {
+    background-color: black;
+    position: absolute;
+    border-bottom: black 0.5rem solid;
+    min-height: auto;
+    min-width: 60rem; /* beim rocketStartButton Container gleich viel! */
+    max-width: 60rem; /*65%;*/
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0.25rem 0px white;
+    left: 37%; /* beim rocketStartButton Container gleich viel! */
+    top: 6rem;
+}

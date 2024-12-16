@@ -30,8 +30,8 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    left: 35%;
-    top: 17rem;
-    min-width: 70rem;
-    max-width: 70rem;
+    left: 37%; /* bei landingPageTextContainer das gleiche */
+    top: 25rem;
+    min-width: 60rem; /* bei landingPageTextContainer das gleiche */
+    max-width: 60rem;
 }

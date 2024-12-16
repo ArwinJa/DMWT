@@ -66,33 +66,32 @@ export default function Index() {
                     Zu den Kommentaren
                 </button>
 
-                <Navbar />
-                <TextBox5 />
-                <TextBox4 />
-                <TextBox3 />
-                <TextBox2 />
-                <TextBox1 />
-
-                <HeaderTexts />
-                <RocketDockBackComplete />
-                <Rocket />
-                <RocketDockFront />
-                <BottomSmoke />
-                <ScrollUpButton />
-                <ScrollDownButton />
-                <BackgroundImage />
-                <Footer />
+                <Navbar/>
+                <TextBox5/>
+                <TextBox4/>
+                <TextBox3/>
+                <TextBox2/>
+                <TextBox1/>
+                <HeaderTexts/>
+                <RocketDockBackComplete/>
+                <Rocket/>
+                <RocketDockFront/>
+                <BottomSmoke/>
+                <ScrollUpButton/>
+                <ScrollDownButton/>
+                <BackgroundImage/>
+                <Footer/>
             </main>
 
 
             <style jsx>{`
                 main {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
 
             
         code {
@@ -145,8 +144,9 @@ export default function Index() {
 function HeaderTexts() {
     return (
         <div className={styles.landingPageFeaturesContainer}>
-            <LandingPageText />
-            <RocketStartButton />
+            <LandingPageText/>
+            <RocketStartButton/>
+
         </div>
     )
 }

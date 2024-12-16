@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <nav className={styles.nav}>
             
-            <img src="/Logo_white.png" alt="logo" />
+            <img src="/Logo%20New%20With%20Title.svg" alt="logo" />
             <div>
                 <button className={styles.link} onClick={() => handleScroll("raketenstarts")} >Raketenstarts</button>
                 <button className={styles.link} onClick={() => handleScroll("treibstoffe")} >Treibstoffe</button>
