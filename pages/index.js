@@ -22,6 +22,7 @@ import TextBox3 from '../components/textBox3';
 import TextBox4 from '../components/textBox4';
 import TextBox5 from '../components/textBox5';
 import Footer from '../components/footer.js';
+import Clouds from '../components/clouds';
 
 
 
@@ -76,6 +77,7 @@ export default function Index() {
                 <RocketDockBackComplete/>
                 <Rocket/>
                 <RocketDockFront/>
+                <Clouds/>
                 <BottomSmoke/>
                 <ScrollUpButton/>
                 <ScrollDownButton/>
@@ -140,13 +142,12 @@ export default function Index() {
     );
 }
 
-// "MISSION NACHHALTIGKEIT: Die Zukunft der Raumfahrt beginnt jetzt" + "Starte die Rakete"
+// "MISSION NACHHALTIGKEIT: ..." + "Starte die Rakete"
 function HeaderTexts() {
     return (
         <div className={styles.landingPageFeaturesContainer}>
             <LandingPageText/>
             <RocketStartButton/>
-
         </div>
     )
 }

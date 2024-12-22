@@ -1,4 +1,4 @@
-.smokeContainer {
+.cloudContainer {
     align-items: center;
     align-content: center;
     min-width: 100%;
@@ -6,42 +6,33 @@
     overflow: hidden;
 }
 
-.bottomSmoke {
-    width: 100%;
-    left: -2%;
-    top: 96.45%;
-    overflow: hidden;
-    position: absolute;
-    pointer-events: none;
-}
-
-/*
-.smoke04 {
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 88%;
-    pointer-events: none;
-    left: 0%;
-    mix-blend-mode: screen;
-}*/
-
-.smokeAnimation {
+.cloudAnimation1 {
     display: flex;
     position: absolute;
-    top: 90%;
+    top: 78%;
     left: 0;
     width: 400%; /* 4 Bilder: 2 Original + 2 Wiederholung */
-    animation: scroll 300s linear infinite;
+    animation: scroll 900s linear infinite;
     z-index: 0;
     mix-blend-mode: screen;
     opacity: 75%;
     pointer-events: none;
-
 }
 
-.smokeImage {
+.cloudAnimation2 {
+    display: flex;
+    position: absolute;
+    top: 83%;
+    left: 0;
+    width: 400%; /* 4 Bilder: 2 Original + 2 Wiederholung */
+    animation: scroll 900s linear infinite;
+    z-index: 0;
+    mix-blend-mode: screen;
+    opacity: 75%;
+    pointer-events: none;
+}
+
+.cloudImage {
     width: 25%; /* Jedes Bild nimmt 1/4 der Breite ein */
     height: auto;
     pointer-events: none;
