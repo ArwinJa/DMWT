@@ -1,15 +1,12 @@
-import useSWR from 'swr';
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useRouter } from 'next/navigation';
 import Link from "next/link";
 import { useState } from 'react';
 
 
 export default function Comments() {
 
-      const [name, setName] = useState('');
-      const [email, setEmail] = useState('');
+      const [Name, setName] = useState('');
+      const [Email, setEmail] = useState('');
       const [message, setMessage] = useState('');
     
       const handleSubmit = async (e) => {
