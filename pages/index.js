@@ -24,6 +24,7 @@ import TextBox4 from '../components/textBox4';
 import TextBox5 from '../components/textBox5';
 import Footer from '../components/footer.js';
 import Clouds from '../components/clouds';
+import Infographic from '../components/infographic.js';
 
 
 
@@ -69,6 +70,7 @@ export default function Index() {
                 </button>
 
                 <Navbar/>
+                <Infographic/>
                 <TextBox5/>
                 <TextBox4/>
                 <TextBox3/>
