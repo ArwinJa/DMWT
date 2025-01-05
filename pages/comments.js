@@ -21,7 +21,7 @@ export default function Comments() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name, email }),
+            body: JSON.stringify({ Name, Email }),
           });
     
           const data = await response.json();
