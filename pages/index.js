@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 // Komponenten
 import RocketDockBackComplete from '../components/rocketDock';
@@ -63,8 +64,8 @@ export default function Index() {
 
 
             <main className={styles.main}>
-                <button className={styles.button1} onClick={() => router.replace('/comments')}>
-                    Zu den Kommentaren
+                <button className={styles.button1}>
+                    <Link href="/comments">Go to Comments</Link>
                 </button>
 
                 <Navbar/>

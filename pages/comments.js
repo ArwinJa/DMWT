@@ -2,6 +2,7 @@ import useSWR from 'swr';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useRouter } from 'next/navigation';
+import Link from "next/link";
 
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -45,8 +46,8 @@ export default function Comments() {
                 ))}
             </ul>
 
-            <button className={styles.button1} onClick={() => router.replace('/')}>
-                Zurück zur Homepage
+            <button className={styles.button1}>
+                <Link href="/">Zurück zur Homepage</Link>
             </button>
 
             <footer>
