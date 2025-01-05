@@ -3,7 +3,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",
@@ -20,4 +21,5 @@
     "prisma": "^6.1.0",
     "react-router-dom": "^6.27.0"
   }
+  
 }
