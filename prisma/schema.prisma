@@ -9,6 +9,6 @@ datasource db {
 
 model Newsletter {
   id    Int    @id @default(autoincrement()) // Primary key
-  name  String
-  email String @unique
+  Name  String
+  Email String @unique
 }
