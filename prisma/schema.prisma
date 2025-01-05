@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql" // Change this to your database (e.g., "postgresql" or "mysql")
-  url      = env("SUPABASE_URL") // Add this environment variable in your `.env` file
+  url      = env("POSTGRES_PRISMA_URL") // Add this environment variable in your `.env` file
 }
 
 model Newsletter {
