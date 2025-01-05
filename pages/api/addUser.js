@@ -4,15 +4,15 @@ const prisma = new PrismaClient();
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email } = req.body;
+    const { Name, Email } = req.body;
 
-    if (!name || !email) {
+    if (!Name || !Email) {
       return res.status(400).json({ error: 'Name and email are required' });
     }
 
     try {
       const newUser = await prisma.newsletter.create({
-        data: { name, email },
+        data: { Name, Email },
       });
 
       return res.status(201).json(newUser);
