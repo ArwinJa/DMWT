@@ -48,7 +48,7 @@ export default function Comments() {
               <input
                 id="name"
                 type="text"
-                value={name}
+                value={Name}
                 onChange={(e) => setName(e.target.value)}
                 required
               />
@@ -58,7 +58,7 @@ export default function Comments() {
               <input
                 id="email"
                 type="email"
-                value={email}
+                value={Email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
