@@ -31,13 +31,17 @@ import {AnimationProvider} from "../contexts/animationContext";
 export default function Index() {
     // Ans Ende der Seite scrollen bei Laden
     useEffect(() => {
-        // Scrollen zum Ende der Seite
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'instant'
-        });
-    }, []);
+        const handleLoad = () => {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        };
+        window.addEventListener('load', handleLoad);
 
+        // Cleanup
+        return () => window.removeEventListener('load', handleLoad);
+    }, []);
 
 
     return (
@@ -47,7 +51,7 @@ export default function Index() {
                     <title>Nachhaltigkeit in der Raumfahrt</title>
                     <link rel="icon" href="/favicon.ico"/>
 
-                    // Google Fonts
+                    {/* Google Fonts */}
                     <style>
                         @import
                         url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
