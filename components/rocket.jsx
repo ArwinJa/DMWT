@@ -2,9 +2,8 @@ import { useEffect } from 'react';
 import styles from '../styles/rocket.module.css';
 import { Rive } from '@rive-app/canvas';
 import Lenis from 'lenis';
-import {useAnimation} from "../contexts/animationContext";
+import { useAnimation } from "../contexts/animationContext";
 
-// TODO: Logik einbauen, dass bei den Schnell-Hoch und -Runter Buttons die Animation auch deaktiviert wird solange es scrolled
 function Rocket() {
     const { scrollEnabled } = useAnimation(); // Greife auf den scrollEnabled Zustand zu
 
@@ -17,9 +16,9 @@ function Rocket() {
                     scroll_section7: { min: 0.1, max: 0.3 }, // Nach wieviel gescrolltem Prozent der Seite soll es einsetzen?
                     scroll_section6: { min: 0.3, max: 0.4 },
                     scroll_section5: { min: 0.4, max: 0.97 },
-                    scroll_section4: { min: 0.97, max: 0.99 },
-                    //scroll_section3: { min: 0.90, max: 1 },
-                    //scroll_section2: { min: 0.99, max: 1 },
+                    scroll_section4: { min: 0.97, max: 0.98 },
+                    scroll_section3: {},
+                    scroll_section2: {},
                     scroll_section1: { min: 0.99, max: 1 } // Hier beginnt es
                 };
                 this.currentAnimation = null;
@@ -74,6 +73,10 @@ function Rocket() {
                         input.fire();
                     }
                 });
+            }
+
+            triggerAnimationManually(animationName) {
+                this.playAnimation(animationName); // Spielt nur `scroll_section2` ab, ohne min/max.
             }
         }
 

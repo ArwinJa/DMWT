@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from 'react';
 
 
-export default function Comments() {
+export default function Newsletter() {
 
       const [Name, setName] = useState('');
       const [Email, setEmail] = useState('');

@@ -39,6 +39,12 @@ export default function Index() {
         };
         window.addEventListener('load', handleLoad);
 
+        // Um das Scrollen auch beim Aktualisieren sicher zu machen, sonst geht es manchmal nicht
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'instant'
+        });
+
         // Cleanup
         return () => window.removeEventListener('load', handleLoad);
     }, []);
@@ -69,7 +75,7 @@ export default function Index() {
 
                 <main className={styles.main}>
                     <button className={styles.button1}>
-                        <Link href="/comments">Go to Comments</Link>
+                        <Link href="/newsletter">Newsletter-Anmeldung (Backend)</Link>
                     </button>
 
                     <Navbar/>
