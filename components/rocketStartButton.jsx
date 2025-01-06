@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import styles from '../styles/rocketStartButton.module.css';
+import Rocket from './rocket'
 
-function RocketStartButton() {
+function RocketStartButton({ playAnimation }) {
     const handleScrollToTop = () => {
         window.scrollTo({
-            top: window.scrollY - 900, // 900 Pixel hochscrollen
-            behavior: 'smooth', // Sanftes Scrollen
+            top: window.scrollY - 900,
+            behavior: 'smooth',
         });
+
+        // Trigger scroll_section5 nach dem Scrollen
+            playAnimation('scroll_section5');
     };
 
     return (

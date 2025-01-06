@@ -1,12 +1,16 @@
 import { useState } from 'react';
+//import { useAnimation } from '../contexts/animationContext'; // Importiere den Context
 import styles from '../styles/scrollUpButton.module.css';
 
 function ScrollUpButton() {
     const [src, setSrc] = useState('/Scroll UP Button.svg');
+    //const { disableAnimation } = useAnimation(); // Greife auf die Funktion zu
 
     const handleScrollToTop = () => {
+        //disableAnimation(); // Deaktiviert die Animation
+
         window.scrollTo({
-            top: 0,       // Scroll ganz nach oben
+            top: 0, // Scroll nach ganz oben
             behavior: 'smooth', // Sanftes Scrollen
         });
     };

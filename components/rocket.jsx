@@ -2,9 +2,12 @@ import { useEffect } from 'react';
 import styles from '../styles/rocket.module.css';
 import { Rive } from '@rive-app/canvas';
 import Lenis from 'lenis';
+import {useAnimation} from "../contexts/animationContext";
 
 // TODO: Logik einbauen, dass bei den Schnell-Hoch und -Runter Buttons die Animation auch deaktiviert wird solange es scrolled
 function Rocket() {
+    const { scrollEnabled } = useAnimation(); // Greife auf den scrollEnabled Zustand zu
+
     useEffect(() => {
         // Initialisiere ScrollAnimationController nach dem Rendern
         class ScrollAnimationController {
@@ -13,11 +16,11 @@ function Rocket() {
                 this.animations = {
                     scroll_section7: { min: 0.1, max: 0.3 }, // Nach wieviel gescrolltem Prozent der Seite soll es einsetzen?
                     scroll_section6: { min: 0.3, max: 0.4 },
-                    scroll_section5: { min: 0.4, max: 0.8 },
-                    scroll_section4: { min: 0.8, max: 0.9 },
+                    scroll_section5: { min: 0.4, max: 0.97 },
+                    scroll_section4: { min: 0.97, max: 0.99 },
                     //scroll_section3: { min: 0.90, max: 1 },
                     //scroll_section2: { min: 0.99, max: 1 },
-                    scroll_section1: { min: 0.9, max: 1 } // Hier beginnt es
+                    scroll_section1: { min: 0.99, max: 1 } // Hier beginnt es
                 };
                 this.currentAnimation = null;
                 this.scrollEnabled = false; // Animation deaktiviert anfangs
@@ -44,8 +47,9 @@ function Rocket() {
                 // Initiales Scroll-Handling deaktiviert, damit es beim Öffnen nicht die ganze Animation spielt
                 // wegen Herunterscrollen.
                 setTimeout(() => {
-                    this.scrollEnabled = true; // Nach einer bestimmten Zeit aktivieren
-                }, 3000); // 3000 ms = 3 sek
+                    this.scrollEnabled = true; // Nach 3 Sekunden aktivieren
+                    this.handleScroll(); // Initialer Scroll-Check
+                }, 3000);
             }
 
             handleScroll() {
@@ -90,9 +94,10 @@ function Rocket() {
         };
     }, []);
 
+
     return (
         <div className={styles.rocket}>
-            <canvas id="riveCanvas" width="3700" height="2700"></canvas>
+            <canvas id="riveCanvas" width="1920" height="1080"></canvas>
         </div>
     );
 }
