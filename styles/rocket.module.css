@@ -1,11 +1,12 @@
 .rocket {
-    grid-row: 1 / -1;
-    height: 75%;
-    width: 75%;
+    scale: 40%;
+    height: 100%;
+    width: 100%;
     position: fixed;
-    top: 53%; /* Zentriert vertikal */
-    left: -23.25%; /* Am linken Bildschirmrand */
-    transform: translateY(-50%); /* Zentriert das Element */
-    transition: transform 0.3s ease; /* Für sanfte Animationen */
+    top: -27%; /* Zentriert vertikal */
+    right: 47%; /* Am linken Bildschirmrand */
     pointer-events: none;
+}
+
+.canvas {
 }

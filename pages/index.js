@@ -7,7 +7,7 @@ import Link from 'next/link';
 // Komponenten
 import RocketDockBackComplete from '../components/rocketDock';
 import RocketDockFront from '../components/rocketDockFront';
-import Rocket from '../components/rocket';
+import Rocket from '../components/rocket.jsx';
 import BottomSmoke from '../components/bottomSmoke';
 import LandingPageText from '../components/landingPageText';
 import RocketStartButton from '../components/rocketStartButton.jsx';

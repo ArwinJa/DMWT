@@ -9,6 +9,11 @@
     left: 0;
     z-index: 1001;
     top: 99.5%;
+    opacity: 0.25;
+    &:hover {
+        opacity: 1;
+        transition: opacity 200ms ease-in-out;
+    }
 }
 
 .footer img {
