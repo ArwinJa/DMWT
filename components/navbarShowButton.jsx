@@ -1,6 +1,6 @@
 import styles from '../styles/navbarShowButton.module.css';
 import { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar.jsx";
 
 function NavbarShowButton() {
     const [src, setSrc] = useState('/Show Navbar Button.svg');
