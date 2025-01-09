@@ -1,0 +1,35 @@
+.button {
+    position: fixed;
+    top: 2.2%;
+    left: 96.3%;
+   float: right;
+    transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
+    opacity: 0.25;
+    scale: 95%;
+    z-index: 1600;
+}
+
+.button:hover {
+    opacity: 1; /* Leichter Effekt beim Hover */
+    scale: 105%;
+}
+
+.buttonActive {
+    position: fixed;
+    top: 2.2%;
+    left: 96.3%;
+    float: right;
+    transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
+    opacity: 1;
+    scale: 95%;
+    z-index: 1600;
+}
+
+.navbarAnimation {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.navbarVisibleAnimation {
+    opacity: 1;
+}

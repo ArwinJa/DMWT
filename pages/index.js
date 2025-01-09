@@ -14,8 +14,6 @@ import RocketStartButton from '../components/rocketStartButton.jsx';
 import '../components/fonts';
 import BackgroundImage from '../components/backgroundImage';
 import ScrollUpButton from "../components/scrollUpButton.jsx";
-import ScrollDownButton from "../components/scrollDownButton.jsx";
-import Navbar from '../components/navbar.js';
 import TextBox1 from "../components/textBox1";
 import TextBox2 from "../components/textBox2";
 import TextBox3 from '../components/textBox3';
@@ -25,7 +23,7 @@ import Footer from '../components/footer.js';
 import Clouds from '../components/clouds';
 import Infographic from '../components/infographic.js';
 import {AnimationProvider} from "../contexts/animationContext";
-
+import NavbarShowButton from "../components/navbarShowButton";
 
 
 export default function Index() {
@@ -78,7 +76,6 @@ export default function Index() {
                         <Link href="/newsletter">Newsletter-Anmeldung (Backend)</Link>
                     </button>
 
-                    <Navbar/>
                     <Infographic/>
                     <TextBox5/>
                     <TextBox4/>
@@ -91,8 +88,8 @@ export default function Index() {
                     <RocketDockFront/>
                     <Clouds/>
                     <BottomSmoke/>
+                    <NavbarShowButton/>
                     <ScrollUpButton/>
-                    <ScrollDownButton/>
                     <BackgroundImage/>
                     <Footer/>
                 </main>
