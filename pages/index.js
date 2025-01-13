@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {useEffect, useState} from "react";
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 // Komponenten
@@ -82,13 +81,13 @@ export default function Index() {
                     <TextBox3/>
                     <TextBox2/>
                     <TextBox1/>
+                    <NavbarShowButton/>
                     <HeaderTexts/>
                     <RocketDockBackComplete/>
                     <Rocket/>
                     <RocketDockFront/>
                     <Clouds/>
                     <BottomSmoke/>
-                    <NavbarShowButton/>
                     <ScrollUpButton/>
                     <BackgroundImage/>
                     <Footer/>

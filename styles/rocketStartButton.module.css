@@ -8,10 +8,10 @@
     outline: 0;
     border: white solid 0.2rem;
     text-shadow: black 0.0625rem 0.0625rem 0.1875rem;
-    font-size: 1.9rem;
+    font-size: 4vh;
     font-family: "Michroma", "monospace";
     cursor: pointer;
-    box-shadow: 0px 0.125rem 0.125rem black;
+    box-shadow: 0 0.125rem 0.125rem black;
     transition: ease background-color 250ms;
     &:hover {
         border-color: rgba(12,74,63,1); /* dark primary color */
@@ -24,14 +24,13 @@
 }
 
 .landingPageButtonContainer {
-    margin-top: 4rem /*7.5%*/;
+    margin-top: 65vh; /*7.5%*/
+    margin-left: 8vh;
     position: absolute;
     height: fit-content;
     text-align: center;
     align-items: center;
     width: 100%;
-    left: 37%; /* bei landingPageTextContainer das gleiche */
-    top: 25rem;
-    min-width: 60rem; /* bei landingPageTextContainer das gleiche */
-    max-width: 60rem;
+    min-width: 60vh; /* bei landingPageTextContainer das gleiche; zuvor: 60rem; */
+    max-width: 100vh;
 }

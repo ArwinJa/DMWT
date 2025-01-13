@@ -1,12 +1,13 @@
 .rocket {
-    scale: 100%;
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: auto;
     position: fixed;
     top: 00%; /* Zentriert vertikal */
-    right: 28.4%; /* Am linken Bildschirmrand */
+    right: 28.5%;  /* Am linken Bildschirmrand */
     pointer-events: none;
 }
 
 .canvas {
+    width: 210vh;
+    height: auto;
 }

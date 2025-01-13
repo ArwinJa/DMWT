@@ -1,11 +1,12 @@
 .button {
     position: fixed;
-    top: 2.2%;
-    left: 96.3%;
-   float: right;
+    top: 3%;
+    right: 2%;
+    float: right;
     transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
     opacity: 0.25;
-    scale: 95%;
+    width: 7vh;
+    height: auto;
     z-index: 1600;
 }
 
@@ -16,8 +17,8 @@
 
 .buttonActive {
     position: fixed;
-    top: 2.2%;
-    left: 96.3%;
+    top: 3%;
+    right: 2%;
     float: right;
     transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
     opacity: 1;

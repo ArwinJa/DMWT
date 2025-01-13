@@ -1,6 +1,6 @@
 .rocketDock {
     width: 28%;
-    left: 0.5%; /* Am linken Bildschirmrand */
+    left: 3%; /* Am linken Bildschirmrand: zuvor 0.5% */
     top: 89.15%;
     overflow: hidden;
     position: absolute;

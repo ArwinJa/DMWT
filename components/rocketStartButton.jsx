@@ -1,9 +1,28 @@
 import { useState } from 'react';
 import styles from '../styles/rocketStartButton.module.css';
-import Rocket from './rocket'
 
 function RocketStartButton({ playAnimation }) {
     const [animationName, setAnimationName] = useState('');
+
+    const handleScrollWithID = (elementId) => {
+            // Kurze Wartezeit vor dem Scrollen
+        setTimeout(() => {
+            const targetElement = document.getElementById(elementId);
+            if (targetElement) {
+                // Zielposition des Elements berechnen
+                const targetPosition = targetElement.offsetTop;
+
+                // Smooth Scroll zur Zielposition
+                slowScrollTo(targetPosition, 2000); // 2000ms Dauer
+
+                // Trigger scroll_section5 nach dem Scrollen
+                playAnimation('scroll_section5');
+            } else {
+                console.error(`Element mit ID ${elementId} nicht gefunden.`);
+            }
+        }, 500); // 500ms Wartezeit
+    };
+
 
     const handleScrollToTop = () => {
         // Kurze Wartezeit vor dem Scrollen
@@ -41,7 +60,7 @@ function RocketStartButton({ playAnimation }) {
     return (
         <div className={styles.landingPageButtonContainer}>
             <button className={styles.landingPageButton}
-                    onClick={handleScrollToTop}
+                    onClick={() => {handleScrollWithID("raketenstarts")}}
             >
                 Starte deine Reise!
             </button>

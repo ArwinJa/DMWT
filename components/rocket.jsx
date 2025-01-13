@@ -100,7 +100,7 @@ function Rocket() {
 
     return (
         <div className={styles.rocket}>
-            <canvas id="riveCanvas" width="1920" height="1080"></canvas>
+            <canvas id="riveCanvas" width="1920" height="1080" className={styles.canvas}></canvas>
         </div>
     );
 }

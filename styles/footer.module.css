@@ -3,16 +3,16 @@
     align-items: center; /* vertikale zentrierung */
     display: flex;
     justify-content: space-between; /* so wird die ganze leiste gefüllt */
-    line-height: 60px;
+    line-height: 13vh;
     width: 100%;
-    height: 78px;
+    height: 13vh /* 78p */;
     background: linear-gradient(180deg, rgba(199, 199, 199, 0), rgba(248, 248, 248, 0.5));
     color: #fff;
-    position: absolute;
+    position: relative;
     left: 0;
     z-index: 1001;
     top: 99.32%;
-    opacity: 0.25;
+    opacity: 0.15;
     transition: opacity 300ms ease-in-out;
 }
 
@@ -23,24 +23,25 @@
 
 .footer img {
     float: left;
-    height: 60px;
+    height: 11vh;
     width: auto;
 }
 
 .mediaiconcontainer {
     align-items: center;
     position: relative;
-    padding-right: 15px;
+    padding-right: 3vh;
+    width: auto;
 }
 
 .mediaicon {
     position: relative;
-    min-height: 30px;
-    max-height: 30px;
-    min-width: 30px;
-    max-width: 30px;
-    padding-left: 6px;
-    padding-right: 6px;
+    min-width: 4.7vh;
+    min-height: 4.7vh;
+    max-width: 5.5vh;
+    max-height: 5.5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
 .mediaicon:hover {
@@ -50,11 +51,11 @@
 .textLink {
     color: black;
     font-family: "Montserrat", sans-serif;
-    font-size: 0.85rem;
+    font-size: 2.7vh;
     align-self: center;
     justify-self: center;
 }
 
 .textLink:hover {
-    font-size: 0.92rem;
+    font-size: 2.9vh;
 }

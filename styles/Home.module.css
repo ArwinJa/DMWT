@@ -134,17 +134,22 @@
   position: relative;
   height: fit-content;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip; /* wichtig */
   overflow-y: clip;
 }
 
 .landingPageFeaturesContainer {
   position: absolute;
-  top: 92.4%;
+  top: 95%;
   height: min-content;
   text-align: center;
   align-items: center;
-  width: 100%;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  left: 38%;
+  min-width: 120vh;
+  max-width: 170vh;
   z-index: 20;
 }
 
