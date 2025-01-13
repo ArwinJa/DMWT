@@ -3,7 +3,7 @@
     height: auto;
     position: fixed;
     top: 00%; /* Zentriert vertikal */
-    right: 28.5%;  /* Am linken Bildschirmrand */
+    right: 25.5%;  /* Am linken Bildschirmrand */
     pointer-events: none;
 }
 

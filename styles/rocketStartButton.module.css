@@ -25,7 +25,7 @@
 
 .landingPageButtonContainer {
     margin-top: 65vh; /*7.5%*/
-    margin-left: 8vh;
+    margin-left: 0vh;
     position: absolute;
     height: fit-content;
     text-align: center;
