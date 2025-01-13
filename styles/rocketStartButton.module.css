@@ -8,7 +8,7 @@
     outline: 0;
     border: white solid 0.2rem;
     text-shadow: black 0.0625rem 0.0625rem 0.1875rem;
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: "Michroma", "monospace";
     cursor: pointer;
     box-shadow: 0 0.125rem 0.125rem black;
@@ -24,13 +24,14 @@
 }
 
 .landingPageButtonContainer {
-    margin-top: 65vh; /*7.5%*/
+    margin-top: 6vh; /*7.5%*/
     margin-left: 0vh;
     position: absolute;
     height: fit-content;
     text-align: center;
     align-items: center;
     width: 100%;
-    min-width: 60vh; /* bei landingPageTextContainer das gleiche; zuvor: 60rem; */
-    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }

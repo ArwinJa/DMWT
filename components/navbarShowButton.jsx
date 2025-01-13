@@ -17,7 +17,6 @@ function NavbarShowButton() {
             <img
                 src={src}
                 className={`${styles.button} ${isNavbarVisible ? styles.buttonActive : ''}`} /* Wechsle Style wenn Navbar aktiv */
-                onMouseOver={() => setSrc('/Show Navbar Button Variant.svg')}
                 onClick={handleClick}
                 alt="Show/Hide Navbar Button"
             />

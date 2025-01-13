@@ -1,4 +1,6 @@
-import styles from '../styles/landingPageText.module.css'
+import styles from '../styles/landingPageText.module.css';
+import RocketStartButton from "./rocketStartButton";
+import {useState} from "react";
 
 /*
 function LandingPageText() {
@@ -20,6 +22,14 @@ function LandingPageText() {
 
 
 function LandingPageText() {
+    const [animationName, setAnimationName] = useState('');
+
+    // Funktion zum Triggern der Animation
+    const playAnimation = (name) => {
+        setAnimationName(name);
+    };
+
+
     return (
         <div className={styles.landingPageTextContainerAlt}>
             <img src="/Logo%20New%20With%20Title.svg" alt="logo"
@@ -28,6 +38,8 @@ function LandingPageText() {
             <h2 className={styles.landingPageSecondTitleText}>
                 Nachhaltig denken, galaktisch handeln.
             </h2>
+
+            <RocketStartButton playAnimation={playAnimation}/>
         </div>
     )
 }

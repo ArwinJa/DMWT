@@ -1,5 +1,4 @@
 import styles from '../styles/navbar.module.css'
-import ScrollDownButton from "./scrollDownButton";
 import {useState} from "react";
 
 function Navbar() {
@@ -33,8 +32,8 @@ function Navbar() {
                 <button className={styles.link} onClick={() => handleScroll("weltraummuell")} >Weltraummüll</button>
                 <button className={styles.link} onClick={() => handleScroll("loesungsansaetze")} >Lösungsansätze</button>
             </div>
-            <div className={styles.scrollDownButtoncontainer}>
-                <ScrollDownButton/>
+            <div className={styles.scrollDownButtonContainer}>
+                <div className={styles.buttonsPlaceholder}></div>
             </div>
         </nav>
     );

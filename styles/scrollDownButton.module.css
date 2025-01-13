@@ -1,13 +1,15 @@
 .scrollDownButton {
     transition: opacity 0.2s ease-in-out;
     opacity: 0.25;
-    width: 7vh;
+    width: 6vh;
     height: auto;
+    z-index: 1700;
 }
 
 .scrollDownButton:hover {
     opacity: 1;
-    scale: 95%;
+    scale: 105%;
+    cursor: pointer;
 }
 
 /* WENN EINZELN IN INDEX.js AUFGERUFEN: */

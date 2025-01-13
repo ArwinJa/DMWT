@@ -10,10 +10,10 @@ function RocketStartButton({ playAnimation }) {
             const targetElement = document.getElementById(elementId);
             if (targetElement) {
                 // Zielposition des Elements berechnen
-                const targetPosition = targetElement.offsetTop;
+                const targetPosition = targetElement.offsetTop - 130; // -130 um noch bisschen weiter hoch zu scrollen
 
                 // Smooth Scroll zur Zielposition
-                slowScrollTo(targetPosition, 2000); // 2000ms Dauer
+                slowScrollTo(targetPosition, 2000);
 
                 // Trigger scroll_section5 nach dem Scrollen
                 playAnimation('scroll_section5');
@@ -69,34 +69,3 @@ function RocketStartButton({ playAnimation }) {
 }
 
 export default RocketStartButton;
-
-
-/*
-function RocketStartButton({ playAnimation }) {
-    const handleScrollToTop = () => {
-        // Kurze Wartezeit vor dem Scrollen
-        setTimeout(() => {
-            window.scrollTo({
-                top: window.scrollY - 900,
-                behavior: 'smooth', // sorgt für sanftes Scrollen
-            });
-
-            // Trigger scroll_section5 nach dem Scrollen
-            playAnimation('scroll_section5');
-        }, 500); // 500ms Wartezeit
-    };
-
-    return (
-        <div className={styles.landingPageButtonContainer}>
-            <button className={styles.landingPageButton}
-                    onClick={handleScrollToTop}
-            >
-                Starte deine Reise!
-            </button>
-        </div>
-    );
-}
-
-
-export default RocketStartButton;
-*/

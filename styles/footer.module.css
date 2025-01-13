@@ -36,12 +36,12 @@
 
 .mediaicon {
     position: relative;
-    min-width: 4.7vh;
-    min-height: 4.7vh;
-    max-width: 5.5vh;
-    max-height: 5.5vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    min-width: 4.2vh;
+    min-height: 4.2vh;
+    max-width: 4.9vh;
+    max-height: 4.9vh;
+    padding-left: 0.7vh;
+    padding-right: 0.7vh;
 }
 
 .mediaicon:hover {
@@ -51,11 +51,11 @@
 .textLink {
     color: black;
     font-family: "Montserrat", sans-serif;
-    font-size: 2.2vh;
+    font-size: 2vh;
     align-self: center;
     justify-self: center;
 }
 
 .textLink:hover {
-    font-size: 2.4vh;
+    font-size: 2.2vh;
 }

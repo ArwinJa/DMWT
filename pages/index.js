@@ -12,6 +12,7 @@ import LandingPageText from '../components/landingPageText';
 import RocketStartButton from '../components/rocketStartButton.jsx';
 import '../components/fonts';
 import BackgroundImage from '../components/backgroundImage';
+import ScrollDownButton from "../components/scrollDownButton";
 import ScrollUpButton from "../components/scrollUpButton.jsx";
 import TextBox1 from "../components/textBox1";
 import TextBox2 from "../components/textBox2";
@@ -81,7 +82,8 @@ export default function Index() {
                     <TextBox3/>
                     <TextBox2/>
                     <TextBox1/>
-                    <NavbarShowButton/>
+                    <NavbarButtons/>
+
                     <HeaderTexts/>
                     <RocketDockBackComplete/>
                     <Rocket/>
@@ -149,19 +151,20 @@ export default function Index() {
 
 // "MISSION NACHHALTIGKEIT: ..." + "Starte die Rakete"
 function HeaderTexts() {
-    const [animationName, setAnimationName] = useState('');
-
-    // Funktion zum Triggern der Animation
-    const playAnimation = (name) => {
-        setAnimationName(name);
-        // Hier kannst du Logik einbauen, um die Animation zu steuern
-        console.log(`Animation ${name} wird gespielt!`);
-    };
 
     return (
         <div className={styles.landingPageFeaturesContainer}>
-            <LandingPageText/>
-            <RocketStartButton playAnimation={playAnimation}/>
+            <LandingPageText />
+        </div>
+    )
+}
+
+function NavbarButtons() {
+
+    return (
+        <div className={styles.navbarButtonsContainer}>
+            <ScrollDownButton/>
+            <NavbarShowButton/>
         </div>
     )
 }

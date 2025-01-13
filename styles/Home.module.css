@@ -153,4 +153,18 @@
   z-index: 20;
 }
 
+.navbarButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  float: right;
+  transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
+  width: 26vh;
+  height: auto;
+  z-index: 1700;
+}
 

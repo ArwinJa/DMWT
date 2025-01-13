@@ -1,5 +1,5 @@
 import { InView } from 'react-intersection-observer';
-import styles from '../styles/textBoxMain.module.css';
+import styles from '../styles/textBoxBlack.module.css';
 
 function TextBoxMain() {
     return (

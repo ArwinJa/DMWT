@@ -1,8 +1,8 @@
 .scrollUpButton {
     position: absolute;
-    top: 98%;
+    top: 98.3%;
     right: 2%;
-    width: 7vh;
+    width: 6vh;
     height: auto;
     transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
     opacity: 0.25;
