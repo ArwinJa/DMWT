@@ -1,0 +1,37 @@
+.widgetContainer {
+    padding-top: 20vh;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text1 {
+    color: white;
+    font-size: 2.5vh;
+    font-family: "Michroma", "monospace";
+}
+
+.input {
+    background: black;
+    width: 40vh;
+    height: 5vh;
+    border: white solid 2px;
+    border-radius: 10px;
+    /* Schrift innen: */
+    color: white;
+    padding-left: 2vh;
+    font-size: 2.2vh;
+    font-family: "Montserrat Medium", sans-serif;
+}
+
+.heading1 {
+    color: white;
+    font-family: "Montserrat Medium", sans-serif;
+}
+
+.loginForm {
+    color: white;
+}

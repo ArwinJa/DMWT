@@ -5,3 +5,10 @@
     object-fit: contain;
     pointer-events: none; /* damit man es nicht mit der Maus auswählen kann */
 }
+
+.background_newsletter {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}

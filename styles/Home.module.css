@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .containerVertical {
@@ -168,3 +169,15 @@
   z-index: 1700;
 }
 
+.mainNewsletter {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  overflow-x: clip; /* wichtig */
+  overflow-y: clip;
+}

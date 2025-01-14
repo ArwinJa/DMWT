@@ -10,8 +10,7 @@ import Rocket from '../components/rocket.jsx';
 import BottomSmoke from '../components/bottomSmoke';
 import LandingPageText from '../components/landingPageText';
 import RocketStartButton from '../components/rocketStartButton.jsx';
-import '../components/fonts';
-import BackgroundImage from '../components/backgroundImage';
+import BackgroundHome from '../components/backgroundHome';
 import ScrollDownButton from "../components/scrollDownButton";
 import ScrollUpButton from "../components/scrollUpButton.jsx";
 import TextBox1 from "../components/textBox1";
@@ -91,7 +90,7 @@ export default function Index() {
                     <Clouds/>
                     <BottomSmoke/>
                     <ScrollUpButton/>
-                    <BackgroundImage/>
+                    <BackgroundHome/>
                     <Footer/>
                 </main>
 
