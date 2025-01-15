@@ -63,7 +63,7 @@ function LoginWidget() {
                 </div>
                 <button type="submit">Submit</button>
             </form>
-            {message && <p>{message}</p>}
+            {message && <p style={{color: 'white'}}>{message}</p>}
             <button className={styles.button1}>
                 <Link href="/">MainPage</Link>
             </button>

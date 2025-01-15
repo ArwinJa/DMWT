@@ -9,7 +9,6 @@ import RocketDockFront from '../components/rocketDockFront';
 import Rocket from '../components/rocket.jsx';
 import BottomSmoke from '../components/bottomSmoke';
 import LandingPageText from '../components/landingPageText';
-import RocketStartButton from '../components/rocketStartButton.jsx';
 import BackgroundHome from '../components/backgroundHome';
 import ScrollDownButton from "../components/scrollDownButton";
 import ScrollUpButton from "../components/scrollUpButton.jsx";
