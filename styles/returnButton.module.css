@@ -1,0 +1,14 @@
+.returnButton {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.25;
+    width: 6vh;
+    height: auto;
+    position: relative; /* nötig, damit z-index funktioniert */
+    z-index: 2700;
+}
+
+.returnButton:hover {
+    opacity: 1;
+    scale: 105%;
+    cursor: pointer;
+}

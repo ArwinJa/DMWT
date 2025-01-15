@@ -1,16 +1,24 @@
 import styles from '../styles/navbarShowButton.module.css';
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Navbar from "../components/navbar.jsx";
 
-function NavbarShowButton() {
+function NavbarShowButton({ initiallyVisible = false }) {
     const [src, setSrc] = useState('/Show Navbar Button.svg');
     const [isNavbarVisible, setNavbarVisible] = useState(false);
-
 
     const handleClick = () => {
         setNavbarVisible(!isNavbarVisible); // Sichtbarkeit toggeln
         setSrc(isNavbarVisible ? '/Show Navbar Button.svg' : '/Show Navbar Button Variant.svg');
     };
+
+    // Aktiviere den Button beim Laden abhängig von der übergebenen Prop
+    useEffect(() => {
+        if (initiallyVisible) {
+            setNavbarVisible(true);
+            setSrc('/Show Navbar Button Variant.svg');
+        }
+    }, [initiallyVisible]);
+
 
     return (
         <>

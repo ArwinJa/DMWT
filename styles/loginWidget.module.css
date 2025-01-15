@@ -1,24 +1,29 @@
 .widgetContainer {
-    padding-top: 20vh;
+    padding: 4vh;
+    margin-top: 20vh;
     position: absolute;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: black;
+    border: rgba(30, 30, 30, 1) solid 2px;
+    border-radius: 10px;
 }
 
-.text1 {
+.inputHeading {
     color: white;
-    font-size: 2.5vh;
-    font-family: "Michroma", "monospace";
+    font-size: 2.3vh;
+    font-family: "Montserrat Medium", "monospace";
 }
 
 .input {
-    background: black;
-    width: 40vh;
-    height: 5vh;
-    border: white solid 2px;
+    margin-bottom: 2.5vh;
+    background: rgba(30, 30, 30, 1);
+    width: 60vh;
+    height: 6vh;
+    border: rgba(30, 30, 30, 1) solid 2px;
     border-radius: 10px;
     /* Schrift innen: */
     color: white;
@@ -28,10 +33,70 @@
 }
 
 .heading1 {
+    font-size: 4vh;
     color: white;
+    font-family: "Michroma", sans-serif;
+    padding-bottom: 1.5vh;
+    text-align: center;
+}
+
+.heading2 {
+    font-size: 2.3vh;
+    color: rgba(70, 70, 70, 1);
     font-family: "Montserrat Medium", sans-serif;
+    padding-bottom: 3.2vh;
+    text-align: center;
 }
 
 .loginForm {
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.successMessage {
+    color: white;
+    font-family: "Montserrat Medium", sans-serif;
+    font-size: 2.5vh;
+}
+
+.returnButton {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.25;
+    width: 6vh;
+    height: auto;
+    z-index: 1700;
+}
+
+.returnButton:hover {
+    opacity: 1;
+    scale: 105%;
+    cursor: pointer;
+}
+
+.bigButton {
+    position: relative;
+    margin-top: 2vh;
+    background: radial-gradient(rgba(34,126,165,1), rgba(13, 48, 63, 1));
+    color: white;
+    padding: 0.9vh 1.4vh 1.2vh 1.4vh ;
+    border-radius: 0.8vh;
+    outline: 0;
+    border: rgba(0, 0, 0, 0) solid 0.2rem;
+    text-shadow: black 0.0625rem 0.0625rem 0.1875rem;
+    font-size: 2.3vh;
+    font-family: "Michroma", "monospace";
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.125rem black;
+    transition: ease background-color 250ms;
+    &:hover {
+        color: rgba(81, 174, 177, 1);
+        background: radial-gradient(rgba(34,126,165,1), rgba(8, 31, 41, 1));
+    }
+    &:disabled {
+        cursor: default;
+        opacity: 0.7;
+    }
 }

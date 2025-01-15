@@ -1,5 +1,4 @@
 import styles from "../styles/loginWidget.module.css";
-import Link from "next/link";
 import {useState} from "react";
 
 function LoginWidget() {
@@ -24,8 +23,9 @@ function LoginWidget() {
 
             const data = await response.json();
 
+            /* Wenn erfolgreich geaddet: */
             if (response.ok) {
-                setMessage('User added successfully!');
+                setMessage('Anmeldung erfolgreich ✓');
                 setName('');
                 setEmail('');
             } else {
@@ -33,40 +33,44 @@ function LoginWidget() {
             }
         } catch (error) {
             console.error('Error:', error);
-            setMessage('Failed to add user');
+            setMessage('Leider lief hier etwas schief.');
         }
     };
 
     return (
         <div className={styles.widgetContainer}>
-            <h className={styles.heading1}>Jetzt anmelden!</h>
+            <h className={styles.heading1}>
+                Bleib auf dem “Fliegenden”<br/>
+
+            </h>
+            <h className={styles.heading2}>
+                Jetzt anmelden und per E-Mail über die neuesten<br/>
+                Entwicklungen informiert werden.
+            </h>
             <form onSubmit={handleSubmit} className={styles.loginForm}>
                 <div>
-                    <label htmlFor="name" className={styles.text1}>Name:<br/></label>
+                    <label className={styles.inputHeading}>Name:<br/></label>
                     <input className={styles.input}
-                        id="name"
-                        type="text"
-                        value={Name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
+                           id="name"
+                           type="text"
+                           value={Name}
+                           onChange={(e) => setName(e.target.value)}
+                           required
                     />
                 </div>
                 <div>
-                    <label htmlFor="email" className={styles.text1}>Email:<br/></label>
+                    <label className={styles.inputHeading}>E-Mail-Adresse:<br/></label>
                     <input className={styles.input}
-                        id="email"
-                        type="email"
-                        value={Email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
+                           id="email"
+                           type="email"
+                           value={Email}
+                           onChange={(e) => setEmail(e.target.value)}
+                           required
                     />
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" className={styles.bigButton}>Bestätigen</button>
             </form>
-            {message && <p style={{color: 'white'}}>{message}</p>}
-            <button className={styles.button1}>
-                <Link href="/">MainPage</Link>
-            </button>
+            {message && <p className={styles.successMessage}>{message}</p>}
         </div>
     )
 }

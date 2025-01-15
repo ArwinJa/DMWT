@@ -166,7 +166,7 @@
   transition: opacity 0.2s ease-in-out; /* Glatter Übergang */
   width: 26vh;
   height: auto;
-  z-index: 1700;
+  z-index: 3000;
 }
 
 .mainNewsletter {
@@ -181,3 +181,4 @@
   overflow-x: clip; /* wichtig */
   overflow-y: clip;
 }
+

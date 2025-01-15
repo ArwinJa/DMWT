@@ -1,0 +1,17 @@
+<svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="23" cy="25" r="23" fill="#0C2F3F"/>
+<circle cx="23" cy="23" r="23" fill="url(#paint0_radial_483_979)"/>
+<mask id="mask0_483_979" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="44" height="44">
+<rect x="0.5" y="-0.5" width="43" height="43" transform="matrix(1 0 0 -1 2 45)" fill="#D9D9D9" stroke="#0C2F3F"/>
+</mask>
+<g mask="url(#mask0_483_979)">
+<path d="M18.9996 10.4042L21.5915 13L14.3532 19.9911L14.3439 20.0001L14.3532 20.0091L21.4824 26.8907L18.9992 29.5957L9.01959 20.0001L18.9996 10.4042Z" fill="#0C2F3F" stroke="#0C2F3F" stroke-width="0.025"/>
+<path d="M13.5 20H29.5V33" stroke="#0C2F3F" stroke-width="3.5"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_483_979" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23 23) rotate(90) scale(43)">
+<stop stop-color="#44D2BF"/>
+<stop offset="1" stop-color="#3156C7"/>
+</radialGradient>
+</defs>
+</svg>

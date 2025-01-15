@@ -35,11 +35,13 @@ export default function Index() {
         };
         window.addEventListener('load', handleLoad);
 
-        // Um das Scrollen auch beim Aktualisieren sicher zu machen, sonst geht es manchmal nicht
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: 'instant'
-        });
+        setTimeout(() => {
+            // Um das Scrollen auch beim Aktualisieren sicher zu machen, sonst geht es manchmal nicht
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'instant'
+            });
+        }, 100) /* kurzes Warten, damit auch sicher alles geladen wurde */
 
         // Cleanup
         return () => window.removeEventListener('load', handleLoad);

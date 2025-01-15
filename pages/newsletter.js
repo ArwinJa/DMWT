@@ -3,6 +3,7 @@ import Head from 'next/head';
 import NavbarShowButton from "../components/navbarShowButton";
 import LoginWidget from "../components/loginWidget";
 import BackgroundNewsletter from "../components/backgroundNewsletter";
+import ReturnButton from "../components/returnButton";
 
 
 export default function Newsletter() {
@@ -26,7 +27,7 @@ export default function Newsletter() {
               </Head>
 
               <main className={styles.mainNewsletter}>
-                  <NavbarShowButton/>
+                  <NavbarButtons/>
                   <LoginWidget/>
                   <BackgroundNewsletter/>
               </main>
@@ -44,4 +45,14 @@ export default function Newsletter() {
               `}</style>
           </div>
       );
+}
+
+function NavbarButtons() {
+
+    return (
+        <div className={styles.navbarButtonsContainer}>
+            <ReturnButton/>
+            <NavbarShowButton initiallyVisible={true} />
+        </div>
+    )
 }
