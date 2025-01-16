@@ -4,6 +4,7 @@ import NavbarShowButton from "../components/navbarShowButton";
 import LoginWidget from "../components/loginWidget";
 import BackgroundNewsletter from "../components/backgroundNewsletter";
 import ReturnButton from "../components/returnButton";
+import FooterDark from "../components/footerDarkVariant";
 
 
 export default function Newsletter() {
@@ -29,6 +30,7 @@ export default function Newsletter() {
               <main className={styles.mainNewsletter}>
                   <NavbarButtons/>
                   <LoginWidget/>
+                  <FooterDark/>
                   <BackgroundNewsletter/>
               </main>
 

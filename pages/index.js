@@ -22,6 +22,7 @@ import Clouds from '../components/clouds';
 import Infographic from '../components/infographic.js';
 import {AnimationProvider} from "../contexts/animationContext";
 import NavbarShowButton from "../components/navbarShowButton";
+import RocketParts from "../components/rocketFloatingParts";
 
 
 export default function Index() {
@@ -76,6 +77,7 @@ export default function Index() {
                         <Link href="/newsletter">Newsletter-Anmeldung (Backend)</Link>
                     </button>
 
+                    <RocketParts/>
                     <Infographic/>
                     <TextBox5/>
                     <TextBox4/>
@@ -83,7 +85,6 @@ export default function Index() {
                     <TextBox2/>
                     <TextBox1/>
                     <NavbarButtons/>
-
                     <HeaderTexts/>
                     <RocketDockBackComplete/>
                     <Rocket/>
