@@ -54,11 +54,14 @@ function Navbar() {
                 <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'weltraummuell')}>
                     Weltraummüll
                 </Link>
+                <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'infografik')}>
+                    Infografik
+                </Link>
                 <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'loesungsansaetze')}>
                     Lösungsansätze
                 </Link>
                 <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'newsletter')}>
-                    Newsletter
+                    Newsletter-Anmeldung
                 </Link>
             </div>
             <div className={styles.scrollDownButtonContainer}>

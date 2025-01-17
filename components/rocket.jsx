@@ -14,7 +14,7 @@ function Rocket() {
                 this.canvas = document.getElementById(canvasId);
                 this.animations = {
                     scroll_section7: {}, // Nach wieviel gescrolltem Prozent der Seite soll es einsetzen?
-                    scroll_section6: { min: 0.0, max: 0.4 },
+                    scroll_section6: { min: 0.0, max: 0.55 },
                     scroll_section5: { min: 0.4, max: 0.97 },
                     scroll_section4: { min: 0.97, max: 0.98 },
                     scroll_section3: {},
