@@ -11,6 +11,7 @@
     align-items: center;
     font-family: Arial, sans-serif;
     flex-direction: column;
+    z-index: 100;
 }
 
 .container {
@@ -101,3 +102,18 @@
     margin: 0 0 0 5vh;
 }
 
+.fadeIn {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateX(20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(4rem);
+}

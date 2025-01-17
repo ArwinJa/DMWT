@@ -45,8 +45,8 @@ function Navbar() {
                 <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'raketenstarts')}>
                     Raketenstarts
                 </Link>
-                <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'treibstoffe')}>
-                    Treibstoffe
+                <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'abgase')}>
+                    Abgase
                 </Link>
                 <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'im_orbit')}>
                     Im Orbit

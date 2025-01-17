@@ -8,7 +8,8 @@ function TextBox3() {
             position: 'absolute',
             top: '55%',
             left: '40.5%',
-            height: '83vh'
+            height: '90vh',
+            zIndex: '10'
         }}>
             <InView
                 threshold={0.5} // Element wird sichtbar, wenn 50% im Viewport sind
@@ -22,26 +23,26 @@ function TextBox3() {
                             <h2 className={styles.h2}>Im Orbit</h2>
                             <p className={styles.p}>
                                 Der Weltraum mag zwar für uns aus unendlichen Weiten bestehen,
-                                unser Erdorbit ist aber begrenzt. Je nach Satelliten oder Raumstation Art
-                                wird eine bestimmte Höhe benötigt. Diese Schichten sind unterteil in niedrigen Erdorbit, 
-                                mittlerer Erdorbit und Geostationärer Orbit. 
-                            </p>
-                            <p className={styles.p}>
-                                Der niedrige Erdorbit isst der am einfachsten zu erreichender Orbit. 
+                                unser Erdorbit ist aber begrenzt. Je nach Art der Satelliten oder Raumstation
+                                wird eine bestimmte Höhe benötigt. Diese Schichten sind unterteilt
+                                in <p className={styles.pHighlighted}>niedrigen Erdorbit, mittleren Erdorbit und geostationären Orbit.</p>
+                                <br/><br/>
+                                Der niedrige Erdorbit ist der am einfachsten zu erreichender Orbit.
                                 Seine primäre Nutzung ist zum einem die bemannte Raumfahrt mit der ISS,
-                                aber auch astronomische Satelliten wie das Hubble-Teleskop, 
-                                welches wichtig ist für unsere Erforschung des Weltalls ist.
-                                Aber auch Satelliten welche eine entscheidende Rolle in unserer Kommunikation spielen.
+                                aber auch astronomische Satelliten wie das Hubble-Teleskop,
+                                welches wichtig für unsere Erforschung des Weltalls ist, aber auch Satelliten welche
+                                eine entscheidende Rolle in unserer Kommunikation spielen.
                                 Der Mittlere Erdorbit ist wichtig für unsere Kommunikation mit weiteren Satelliten,
                                 aber auch für die weltweite Navigation wie GPS oder Galileo.
-                            </p>
-                            <p className={styles.p}>
-                                Zum Schluss gibt es noch den Geostationärer Orbit welcher neben Meteorologischen-
-                                und Kommunikationssatelliten auch eine wichtige Rolle in der TV-Übertragung mit Satelliten wie Astra.
-                            </p>
-                            <p className={styles.p}>
-                                Alle dieser Orbit sind begrenzt in ihrer Kapazität für Satelliten und wir neigen uns jetzt schon einer 
-                                Überbevölkerung hin, in Folge welcher Satelliten immer öfter Ausweichmanöver vollführen müssen.
+                                <br/><br/>
+                                Zum Schluss gibt es noch den geostationären Orbit, welcher neben Meteorologischen-
+                                und Kommunikationssatelliten auch eine wichtige Rolle in der TV-Übertragung mit
+                                Satelliten wie Astra spielt.
+                                <br/><br/>
+                                Alle diese Orbits sind begrenzt in ihrer Kapazität für Satelliten und
+                                <p className={styles.pHighlighted}>wir neigen uns jetzt schon einer Überbevölkerung zu</p>,
+                                in Folge welcher Satelliten immer öfter Ausweichmanöver vollführen
+                                müssen.
                             </p>
                         </div>
                     </div>
