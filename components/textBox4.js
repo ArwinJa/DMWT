@@ -21,25 +21,20 @@ function TextBox4() {
                         <div className={styles.textBoxMain}>
                             <h2 className={styles.h2}>Weltraummüll</h2>
                             <p className={styles.p}>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Unsere Orbits sind aber nicht nur von Satelliten bevölkert,
+                                sondern auch von Weltraummüll oder Weltraumschrott. Dabei handelt es sich und Gegenstände,
+                                die keinen Gebrauchswert mehr besitzen, sondern eine Gefahr für die bemannte und unbemannte Raumfahrt.
+                                Diese Gefahren sind zum einem das unkontrollierte Herabstürzen aus dem All aber auch eine Kollision mit Satelliten.
                             </p>
                             <p className={styles.p}>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Dieser Schrott fliegt mit hohen Geschwindigkeiten im Orbit umher
+                                und kann somit schon mit einer geringen Masse eine Gefahr für Satelliten
+                                und Stationen darstellen. Sollte es zu einer Kollision kommen wird immer mehr Schrott verursacht.
+                                Man kann also einen Teufelskreis beobachten. 
                             </p>
                             <p className={styles.p}>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Im Rahmen von mehreren Kampagnen zur Messung hat man festgestellt,
+                                dass die Anzahl der fliegenden Objekte weiter ansteigt.
                             </p>
                         </div>
                     </div>

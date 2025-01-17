@@ -21,25 +21,19 @@ function TextBox2() {
                         <div className={styles.textBoxMain}>
                             <h2 className={styles.h2}>Treibstoffe</h2>
                             <p className={styles.p}>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Ein Raketenstart verursacht Tonnen von CO2 pro Astronauten.
+                                Diese Zahlen sind pro Person mehr als das zehnfache eines Flugzeugpassagiers.
+                                Durch die im Vergleich geringe Anzahl von Raketenstarts ist dies ein geringeres Problem,
+                                viel schlimmer isst die Höhe, in der die Schadstoffe sich befinden.
                             </p>
                             <p className={styles.p}>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            In der Stratosphäre (15 bis 50km) und Mesosphäre (50 bis 80km) können die Treibhausgase
+                            für mehrere Jahre bestehen bleiben, was zu einem negativen Effekt auf das Weltklima beiträgt.
                             </p>
                             <p className={styles.p}>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Neben CO2 entstehen auch Stoffe wie Aluminiumoxid, Stickoxid und Wasserdampf.
+                            Diese Stoffe reagieren in der Stratosphäre und tragen zum Ozonabbau bei. 
+                            Die Ozonschicht ist ein wichtiger Bestandteil, der die Erde vor Ultravioletter Strahlung schützt.
                             </p>
                         </div>
                     </div>
