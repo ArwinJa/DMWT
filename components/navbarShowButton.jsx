@@ -11,7 +11,7 @@ function NavbarShowButton({ initiallyVisible = false }) {
         setSrc(isNavbarVisible ? '/Show Navbar Button.svg' : '/Show Navbar Button Variant.svg');
     };
 
-    // Aktiviere den Button beim Laden abhängig von der übergebenen Prop
+    // Zeige Navbar beim Laden abhängig von der übergebenen Prop
     useEffect(() => {
         if (initiallyVisible) {
             setNavbarVisible(true);
@@ -19,6 +19,24 @@ function NavbarShowButton({ initiallyVisible = false }) {
         }
     }, [initiallyVisible]);
 
+    // Zeige Navbar, wenn ganz oben auf der Seite angekommen
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY === 0) { // Prüfen, ob ganz oben
+                setNavbarVisible(true);
+                setSrc('/Show Navbar Button Variant.svg');
+            } else {
+                setNavbarVisible(false);
+                setSrc('/Show Navbar Button.svg');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll); // Scroll-Event anhängen
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll); // Cleanup
+        };
+    }, []);
 
     return (
         <>

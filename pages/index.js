@@ -165,7 +165,7 @@ function NavbarButtons() {
     return (
         <div className={styles.navbarButtonsContainer}>
             <ScrollDownButton/>
-            <NavbarShowButton/>
+            <NavbarShowButton initiallyVisible={false}/>
         </div>
     )
 }

@@ -1,8 +1,19 @@
-.container {
+.outerContainer {
     position: absolute;
-    top: 35%;
-    left: 59.5%;
+    top: 36%;
+    left: 55.5%;
     transform: translate(-50%, -50%);
+    min-width: 170vh;
+    max-width: 170vh;
+    min-height: 69vh;
+    max-height: 69vh;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
     align-items: center;
     font-family: Arial, sans-serif;
@@ -48,14 +59,15 @@
     top: 50%;
     left: 50%;
     width: auto;
-    height: 21vh;
+    height: 20.5vh;
     transform: translate(-50%, -50%);
     z-index: 9;
 }
 
 .infoBox {
-    width: 40vh;
-    margin-left: 10vh;
+    margin-top: -20vh;
+    width: 60vh;
+    margin-left: 11vh;
     padding: 2.5vh;
     color: white;
     display: flex;
@@ -65,9 +77,20 @@
     min-height: 15vh;
 }
 
+.infoBox h1 {
+    margin-bottom: 3vh;
+    font-size: 3.2vh;
+    font-family: "Michroma", monospace;
+    color: white;
+    background-color: black;
+    padding: 1vh 2vh; /* Innenabstand für die Box */
+    text-align: center;
+    width: 60vh;
+}
+
 .infoBox h2 {
     font-family: "Michroma", monospace;
-    margin: 0 0 1vh 0;
+    margin: 0 0 1vh 5vh;
     font-size: 2.7vh;
 }
 
@@ -75,5 +98,6 @@
     font-family: "Montserrat Medium", sans-serif;
     font-size: 2vh;
     line-height: 1.5;
-    margin: 0;
+    margin: 0 0 0 5vh;
 }
+

@@ -7,7 +7,8 @@ function TextBox2() {
         style={{
             position: 'absolute',
             top: '70%',
-            left: '40.5%'
+            left: '40.5%',
+            height: '83vh'
         }}>
             <InView
                 threshold={0.5} // Element wird sichtbar, wenn 50% im Viewport sind
