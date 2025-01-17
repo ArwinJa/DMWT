@@ -18,6 +18,18 @@
     pointer-events: none;
 }
 
+.partsAnimationFrontVariant {
+    will-change: transform;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 400%; /* 4 Bilder: 2 Original + 2 Wiederholung */
+    animation: scrollRight 450s linear infinite;
+    z-index: 10;
+    opacity: 100%;
+    pointer-events: none;
+}
+
 .partsAnimationBack {
     will-change: transform;
     display: flex;
@@ -25,6 +37,19 @@
     top: 5%;
     width: 400%; /* 4 Bilder: 2 Original + 2 Wiederholung */
     animation: scrollLeft 800s linear infinite;
+    z-index: 0;
+    opacity: 100%;
+    pointer-events: none;
+    backface-visibility: hidden;
+}
+
+.partsAnimationBackVariant {
+    will-change: transform;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    width: 400%; /* 4 Bilder: 2 Original + 2 Wiederholung */
+    animation: scrollLeft 750s linear infinite;
     z-index: 0;
     opacity: 100%;
     pointer-events: none;
@@ -53,17 +78,4 @@
     to {
         transform: translateX(0); /* Verschiebt 2 Bilderbreiten */
     }
-}
-
-.fadeIn {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-}
-
-.visible {
-    opacity: 1;
-}
-
-.hidden {
-    opacity: 0;
 }
