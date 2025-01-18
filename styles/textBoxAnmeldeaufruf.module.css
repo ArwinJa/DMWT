@@ -1,0 +1,58 @@
+.textBoxMain {
+    position: relative;
+    background-color: transparent;
+    border-left: 1rem solid transparent;
+    border-right: 1rem inset transparent;
+    border-bottom: 0.5rem solid transparent;
+    border-top: 0.1rem solid transparent;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    text-align: left;
+    align-items: center;
+    /*box-shadow: 0px 0.25rem 0px white;*/
+    z-index: 100;
+    min-height: 90vh;
+    max-height: 100vh;
+    min-width: 90vh;
+    max-width: 105vh;
+}
+
+.textBoxContainer {
+    position: absolute;
+    top: 85%;
+    left: 40.5%;
+    height: auto;
+}
+
+.h2 {
+    font-family: "Michroma", monospace;
+    font-size: 5.5vh;
+    color: white;
+    text-shadow: rgb(59, 59, 59) 0.1rem 0.1rem 0.1rem;
+}
+
+.p {
+    font-family: "Montserrat Medium", sans-serif;
+    font-size: 2.4vh;
+    color: white;
+    text-align: justify; /* Blocksatz */
+    text-shadow: rgb(59, 59, 59) 0.1rem 0.1rem 0.2rem;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background: radial-gradient(circle, #37666F 0%, #0D303F 100%);
+    border: none;
+    color: white;
+    padding: 30px 60px;
+    font-size: 32px;
+    border-radius: 20px;
+    cursor: pointer;
+}

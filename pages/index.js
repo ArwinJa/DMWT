@@ -17,6 +17,7 @@ import TextBox2 from "../components/textBox2";
 import TextBox3 from '../components/textBox3';
 import TextBox4 from '../components/textBox4';
 import TextBox5 from '../components/textBox5';
+import TextBoxAnmeldeaufruf from '../components/textBoxAnmeldeaufruf.js';
 import Footer from '../components/footer.js';
 import Clouds from '../components/clouds';
 import Infographic from '../components/infographic.js';
@@ -73,11 +74,9 @@ export default function Index() {
 
 
                 <main className={styles.main}>
-                    <button className={styles.button1}>
-                        <Link href="/newsletter">Newsletter-Anmeldung (Backend)</Link>
-                    </button>
 
                     <RocketParts/>
+                    <TextBoxAnmeldeaufruf/>
                     <Infographic/>
                     <TextBox5/>
                     <TextBox4/>
