@@ -6,10 +6,11 @@ function LoginWidget() {
     const [Email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    /* Fremdquelle: ChatGPT für grundlegende Struktur */
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Clear previous message
+        /* Vorherige Nachricht leeren */
         setMessage('');
 
         try {

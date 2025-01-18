@@ -7,6 +7,7 @@ import { useAnimation } from "../contexts/animationContext";
 function Rocket() {
     const { scrollEnabled } = useAnimation(); // Greife auf den scrollEnabled Zustand zu
 
+    // Fremdquelle als Hilfe: YouTube Tutorial für React + Rive
     useEffect(() => {
         // Initialisiere ScrollAnimationController nach dem Rendern
         class ScrollAnimationController {
@@ -24,7 +25,7 @@ function Rocket() {
                 this.currentAnimation = null;
                 this.scrollEnabled = false; // Animation deaktiviert anfangs
 
-                // Initialize Rive
+                // Rive initialisieren
                 this.rive = new Rive({
                     canvas: this.canvas,
                     src: rivePath,
@@ -35,7 +36,7 @@ function Rocket() {
             }
 
             init() {
-                // Get state machine inputs
+                // State machine inputs holen
                 this.stateMachine = this.rive.stateMachineInputs("ScrollController");
 
                 // Füge Scroll-Listener hinzu, aber verhindere Aktivierung
@@ -55,7 +56,7 @@ function Rocket() {
                 const scrollPercent =
                     window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
 
-                // Determine active animation
+                // Aktive Animation herausfinden
                 for (const [animName, range] of Object.entries(this.animations)) {
                     if (scrollPercent >= range.min && scrollPercent <= range.max) {
                         if (this.currentAnimation !== animName) {
@@ -80,10 +81,10 @@ function Rocket() {
             }
         }
 
-        // Initialize the controller
+        // Controller initialisieren
         const controller = new ScrollAnimationController('riveCanvas', '/rakete_animation.riv');
 
-        // Initialize Lenis
+        // Lenis initialisieren
         const lenis = new Lenis();
         function raf(time) {
             lenis.raf(time);

@@ -43,7 +43,7 @@ export default function Index() {
                 top: document.body.scrollHeight,
                 behavior: 'instant'
             });
-        }, 100) /* kurzes Warten, damit auch sicher alles geladen wurde */
+        }, 100) // kurzes Warten, damit auch sicher alles geladen wurde
 
         // Cleanup
         return () => window.removeEventListener('load', handleLoad);
@@ -74,7 +74,6 @@ export default function Index() {
 
 
                 <main className={styles.main}>
-
                     <RocketParts/>
                     <TextBoxAnmeldeaufruf/>
                     <Infographic/>
@@ -149,7 +148,6 @@ export default function Index() {
     );
 }
 
-// "MISSION NACHHALTIGKEIT: ..." + "Starte die Rakete"
 function HeaderTexts() {
 
     return (

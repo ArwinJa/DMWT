@@ -5,7 +5,7 @@ function RocketStartButton({ playAnimation }) {
     const [animationName, setAnimationName] = useState('');
 
     const handleScrollWithID = (elementId) => {
-            // Kurze Wartezeit vor dem Scrollen
+        // Kurze Wartezeit vor dem Scrollen
         setTimeout(() => {
             const targetElement = document.getElementById(elementId);
             if (targetElement) {
@@ -23,7 +23,6 @@ function RocketStartButton({ playAnimation }) {
         }, 500); // 500ms Wartezeit
     };
 
-
     const handleScrollToTop = () => {
         // Kurze Wartezeit vor dem Scrollen
         setTimeout(() => {
@@ -34,6 +33,7 @@ function RocketStartButton({ playAnimation }) {
         }, 500); // 300ms Wartezeit
     };
 
+    // Fremdquelle: ChatGPT für Implementierung von langsamen Scroll, da JS Grundimplementierung zu schnell
     const slowScrollTo = (targetPosition, duration) => {
         const startPosition = window.scrollY;
         const distance = targetPosition - startPosition;
