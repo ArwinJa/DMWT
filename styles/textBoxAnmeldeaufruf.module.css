@@ -1,5 +1,4 @@
 .textBoxMain {
-    position: relative;
     background-color: transparent;
     border-left: 1rem solid transparent;
     border-right: 1rem inset transparent;
@@ -7,35 +6,39 @@
     border-top: 0.1rem solid transparent;
     padding-left: 3vh;
     padding-right: 3vh;
-    text-align: left;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     /*box-shadow: 0px 0.25rem 0px white;*/
-    z-index: 100;
+    z-index: 10;
     min-height: 90vh;
     max-height: 100vh;
     min-width: 90vh;
-    max-width: 105vh;
+    max-width: 130vh;
 }
 
 .textBoxContainer {
     position: absolute;
-    top: 85%;
-    left: 40.5%;
-    height: auto;
+    top: 2.3%;
+    min-height: 60vh;
+    max-height: 60vh;
 }
 
 .h2 {
     font-family: "Michroma", monospace;
-    font-size: 5.5vh;
+    font-size: 6.5vh;
     color: white;
+    text-align: center;
     text-shadow: rgb(59, 59, 59) 0.1rem 0.1rem 0.1rem;
+    margin-bottom: 3.5vh;
 }
 
 .p {
     font-family: "Montserrat Medium", sans-serif;
-    font-size: 2.4vh;
+    font-size: 2.7vh;
+    margin-bottom: 5.5vh;
     color: white;
-    text-align: justify; /* Blocksatz */
+    text-align: center; /* Blocksatz */
     text-shadow: rgb(59, 59, 59) 0.1rem 0.1rem 0.2rem;
 }
 
@@ -44,15 +47,29 @@
     justify-content: center;
 }
 
+
 .button {
-    display: inline-block;
-    text-align: center;
+    position: relative;
     text-decoration: none;
-    background: radial-gradient(circle, #37666F 0%, #0D303F 100%);
-    border: none;
+    margin-top: 2vh;
+    background: radial-gradient(rgba(34,126,165,1), rgba(13, 48, 63, 1));
     color: white;
-    padding: 30px 60px;
-    font-size: 32px;
-    border-radius: 20px;
+    padding: 2.3vh 2.7vh 2.3vh 2.7vh ;
+    border-radius: 0.8vh;
+    outline: 0;
+    border: rgba(0, 0, 0, 0) solid 0.2rem;
+    text-shadow: black 0.0625rem 0.0625rem 0.1875rem;
+    font-size: 2.8vh;
+    font-family: "Michroma", "monospace";
     cursor: pointer;
+    box-shadow: 0 0.125rem 0.125rem black;
+    transition: ease background-color 250ms;
+    &:hover {
+        color: rgba(81, 174, 177, 1);
+        background: radial-gradient(rgba(34,126,165,1), rgba(8, 31, 41, 1));
+    }
+    &:disabled {
+        cursor: default;
+        opacity: 0.7;
+    }
 }

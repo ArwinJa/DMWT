@@ -28,24 +28,24 @@ function TextBox1() {
                                 die Atmosphäre.
                             </p>*/}
                             <p className={styles.p}>
-                                Der <p className={styles.pHighlighted}>massive Lärm</p> von über 180 Dezibel und die <p
-                                className={styles.pHighlighted}>hohen Temperaturen</p> des Ausstoßes
+                                Der <span className={styles.pHighlighted}>massive Lärm</span> von über 180 Dezibel und die <span
+                                className={styles.pHighlighted}>hohen Temperaturen</span> des Ausstoßes
                                 der Triebwerke, die bei Raketenstarts auftreten,
                                 können langfristige Folgen für die umliegende Vegetation und Tierwelt bedeuten.
-                                Die <p className={styles.pHighlighted}>Abgase und Treibstoffreste</p> können
+                                Die <span className={styles.pHighlighted}>Abgase und Treibstoffreste</span> können
                                 die Luft- und Wasserqualität im betroffenen
                                 Umkreis verschlechtern oder sogar kontaminieren.
-                                <br/>Zudem besteht natürlich eine Gefahr von <p
+                                <br/>Zudem besteht natürlich eine Gefahr von <span
                                 className={styles.pHighlighted}>herunterfallenden
-                                Trümmern und Boosterraketenteilen.</p>
+                                Trümmern und Boosterraketenteilen.</span>
                                 <br/><br/>
                                 Oft werden deswegen für Raketenstarts unbesiedelte Gebiete mit wenig Vegetation, wie
                                 etwa Küstengegenden, verwendet, da Trümmer und Reste so ins Meer
                                 fallen können und so wenig Vegetation wie möglich beschädigt wird — ein Schritt in die
                                 richtige Richtung.
                                 <br/><br/>
-                                Ganz davon abgesehen verbrauchen Raketen je nach Art der Mission <p className={styles.pHighlighted}>Hunderte
-                                bis Tausende Tonnen an Treibstoffen</p> pro Start.
+                                Ganz davon abgesehen verbrauchen Raketen je nach Art der Mission <span className={styles.pHighlighted}>Hunderte
+                                bis Tausende Tonnen an Treibstoffen</span> pro Start.
                             </p>
                         </div>
                     </div>

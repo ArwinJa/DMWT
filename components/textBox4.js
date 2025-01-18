@@ -23,12 +23,12 @@ function TextBox4() {
                             <h2 className={styles.h2}>Weltraummüll</h2>
                             <p className={styles.p}>
                                 Unsere Orbits sind aber nicht nur von Satelliten bevölkert,
-                                sondern auch von <p className={styles.pHighlighted}>Weltraummüll bzw. -schrott</p>. Dabei
+                                sondern auch von <span className={styles.pHighlighted}>Weltraummüll bzw. -schrott</span>. Dabei
                                 handelt es sich um Gegenstände,
                                 die keinen Gebrauchswert mehr besitzen, z. B. Trümmerreste.
                                 <br/>Sie bergen Gefahren für die bemannte und unbemannte Raumfahrt:
-                                Zum einen das <p className={styles.pHighlighted}>unkontrollierte Herabstürzen</p> aus dem
-                                All, aber auch <p className={styles.pHighlighted}>mögliche Kollisionen</p> mit Satelliten.
+                                Zum einen das <span className={styles.pHighlighted}>unkontrollierte Herabstürzen</span> aus dem
+                                All, aber auch <span className={styles.pHighlighted}>mögliche Kollisionen</span> mit Satelliten.
                                 <br/><br/>
                                 Dieser Schrott fliegt mit hohen Geschwindigkeiten im Orbit umher
                                 und kann somit schon mit einer geringen Masse eine Gefahr für Satelliten
@@ -37,7 +37,7 @@ function TextBox4() {
                                 Man kann also einen Teufelskreis beobachten.
                                 <br/><br/>
                                 Im Rahmen mehrerer Kampagnen zur Messung hat man festgestellt,
-                                dass die <p className={styles.pHighlighted}>Anzahl der fliegenden Objekte weiter ansteigt.</p>
+                                dass die <span className={styles.pHighlighted}>Anzahl der fliegenden Objekte weiter ansteigt.</span>
                             </p>
                         </div>
                     </div>

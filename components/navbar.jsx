@@ -60,7 +60,7 @@ function Navbar() {
                 <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'loesungsansaetze')}>
                     Lösungsansätze
                 </Link>
-                <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'newsletter')}>
+                <Link href={'/'} className={styles.link} onClick={(e) => handleClick(e, 'anmeldeaufruf')}>
                     Newsletter-Anmeldung
                 </Link>
             </div>

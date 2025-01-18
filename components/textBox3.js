@@ -25,7 +25,7 @@ function TextBox3() {
                                 Der Weltraum mag zwar für uns aus unendlichen Weiten bestehen,
                                 unser Erdorbit ist aber begrenzt. Je nach Art der Satelliten oder Raumstation
                                 wird eine bestimmte Höhe benötigt. Diese Schichten sind unterteilt
-                                in <p className={styles.pHighlighted}>niedrigen Erdorbit, mittleren Erdorbit und geostationären Orbit.</p>
+                                in <span className={styles.pHighlighted}>niedrigen Erdorbit, mittleren Erdorbit und geostationären Orbit.</span>
                                 <br/><br/>
                                 Der niedrige Erdorbit ist der am einfachsten zu erreichender Orbit.
                                 Seine primäre Nutzung ist zum einem die bemannte Raumfahrt mit der ISS,
@@ -40,7 +40,7 @@ function TextBox3() {
                                 Satelliten wie Astra spielt.
                                 <br/><br/>
                                 Alle diese Orbits sind begrenzt in ihrer Kapazität für Satelliten und
-                                <p className={styles.pHighlighted}>wir neigen uns jetzt schon einer Überbevölkerung zu</p>,
+                                <span className={styles.pHighlighted}>wir neigen uns jetzt schon einer Überbevölkerung zu</span>,
                                 in Folge welcher Satelliten immer öfter Ausweichmanöver vollführen
                                 müssen.
                             </p>
