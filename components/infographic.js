@@ -12,7 +12,7 @@ const atmosphereData = [
         scaleFactor: 0.75 },
     { name: 'Mittlerer Erdorbit', umlaufbahn: '2.001 bis 31.750 km', info: '524 Teile',
         moreInfo: 'Die geringste Anzahl an umherschwebendem Weltraumschrott.',
-        color: 'rgba(32,75,109,1)', hoverColor: 'rgba(69,161,168,1)',
+        color: 'radial-gradient(rgba(48,123,136,1) 15%, rgba(32,75,109,1) 70%)', hoverColor: 'radial-gradient(rgba(136,195,200,1) 15%, rgba(69,161,168,1) 70%)',
         scaleFactor: 1.1 },
     { name: 'Übergangszonen', umlaufbahn: '31.751 bis 35.585 km', info: '8.437 Teile',
         moreInfo: 'Diese Teile sind noch auf dem Weg zu geostationären Objekten; sie dürfen also nicht zu stark gewichtet werden.',
@@ -20,7 +20,7 @@ const atmosphereData = [
         scaleFactor: 0.98 },
     { name: 'Geostationärer Orbit', umlaufbahn: '35.586 bis 46.380 km', info: '3.320 Teile',
         moreInfo: 'Hier schweben Objekte wie Rundfunk- und Wettersatelliten — somit etwa auch beschädigte Teile dieser.',
-        color: 'rgba(10,38,50,1)', hoverColor: 'rgba(47,113,124,1)',
+        color: 'radial-gradient(rgba(47,154,157,1) 15%, rgba(10,38,50,1) 70%)', hoverColor: 'radial-gradient(rgba(153,198,206,1) 15%, rgba(0,88,103,1) 70%)',
         scaleFactor: 1.05 },
 ];
 
