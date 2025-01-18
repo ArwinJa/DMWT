@@ -29,7 +29,7 @@ function LoginWidget() {
                 setName('');
                 setEmail('');
             } else {
-                setMessage(`Fehler: ${data.error}<br/>Bitte verwende nicht zweimal dieselbe E-Mail.`);
+                setMessage(`Fehler: ${data.error}. Bitte verwende keine E-Mail zweimal.`);
             }
         } catch (error) {
             console.error('Error:', error);
